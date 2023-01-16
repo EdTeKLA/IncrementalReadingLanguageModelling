@@ -14,8 +14,19 @@ def splitWriteSents(filename, filename_output):
         if not matchObj:  
             prts = sent_tokenize(line)
             for prt in prts:
-                if prt != "" and prt != "\n":
-                    f.write(prt.strip() + "\n")
+                # Remove URLs
+                matchObj = re.match(r'(https?:\/\/)?(www\.)?[a-zA-Z0-9-]+\.(com|org)(\.[a-z]{2,3})?', prt)
+                if matchObj:
+                    continue
+                words = prt.strip().split()
+                for word in words:
+                    # check if anything not A-Za-z.,<>0-9
+                    matchObj = re.match(r'[^A-Za-z,\.<>0-9]+', word)
+                    if matchObj:
+                        continue
+                    if word != "" and word != "\n":
+                        f.write(word.strip() + " ")
+                f.write("\n")
 
         
     f.close()
