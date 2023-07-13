@@ -1,0 +1,37 @@
+language,surprisal,delta_AIC,colour
+E,N-Gram Word Surprisal,41.86338296,#348ABD
+E,N-Gram POS Surprisal,2.157214235,#188487
+E,N-Gram Word/POS Surprisal,37.96696684,#FDBF11
+E,PCFG Total Surprisal,14.77308302,#E24A33
+E,PCFG Syntactic Surprisal,2.152498249,#FC7E5E
+E,PCFG Lexical Surprisal,3.783071953,#7E2F8E
+E,PCFG POS Surprisal,-2.307569373,#AF7F3D
+E,RNNG Surprisal,15.40149983,#33BBCC
+E,Transformer Surprisal,17.61947072,#E586B6
+C,N-Gram Word Surprisal,53.82209528,#348ABD
+C,N-Gram POS Surprisal,24.02112452,#188487
+C,N-Gram Word/POS Surprisal,41.01209428,#FDBF11
+C,PCFG Total Surprisal,32.04568859,#E24A33
+C,PCFG Syntactic Surprisal,-4.827794086,#FC7E5E
+C,PCFG Lexical Surprisal,18.06530692,#7E2F8E
+C,PCFG POS Surprisal,16.78541073,#AF7F3D
+C,RNNG Surprisal,42.10493717,#33BBCC
+C,Transformer Surprisal,46.11755914,#E586B6
+K,N-Gram Word Surprisal,7.879753112,#348ABD
+K,N-Gram POS Surprisal,1.636102225,#188487
+K,N-Gram Word/POS Surprisal,5.152888904,#FDBF11
+K,PCFG Total Surprisal,3.456692112,#E24A33
+K,PCFG Syntactic Surprisal,-1.121609329,#FC7E5E
+K,PCFG Lexical Surprisal,0.6605552217,#7E2F8E
+K,PCFG POS Surprisal,12.50293334,#AF7F3D
+K,RNNG Surprisal,19.62637012,#33BBCC
+K,Transformer Surprisal,13.78174189,#E586B6
+S,N-Gram Word Surprisal,51.14241972,#348ABD
+S,N-Gram POS Surprisal,13.2603275,#188487
+S,N-Gram Word/POS Surprisal,45.12141086,#FDBF11
+S,PCFG Total Surprisal,28.3066357,#E24A33
+S,PCFG Syntactic Surprisal,-0.6194814559,#FC7E5E
+S,PCFG Lexical Surprisal,16.02931914,#7E2F8E
+S,PCFG POS Surprisal,2.748777796,#AF7F3D
+S,RNNG Surprisal,41.17141433,#33BBCC
+S,Transformer Surprisal,28.19190373,#E586B6
