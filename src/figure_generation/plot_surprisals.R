@@ -3,6 +3,7 @@ library(patchwork)
 library(dplyr)
 library(coin)
 library(rcompanion)
+library(rstatix)
 
 save_path = "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/stats/surprisal_violin_plots"
 
@@ -272,9 +273,8 @@ head(violin_df)
 # STATISTICAL TESTING
 
 kruskal.test(surp_value ~ surp_type, data = violin_df)
+kruskal_effsize(data = violin_df, surp_value ~ surp_type)
 pairwise.wilcox.test(violin_df$surp_value, violin_df$surp_type, p.adj="holm", exact=F)
-
-
 n_gram_word = subset(violin_df, surp_type == "N-Gram Word Surprisal")$surp_value
 n_gram_pos = subset(violin_df, surp_type == "N-Gram POS Surprisal")$surp_value
 n_gram_word_pos = subset(violin_df, surp_type == "N-Gram Word/POS Surprisal")$surp_value
@@ -284,6 +284,9 @@ PCFG_syn = subset(violin_df, surp_type == "PCFG Syntactic Surprisal")$surp_value
 PCFG_pos = subset(violin_df, surp_type == "PCFG POS Surprisal")$surp_value
 RNNG = subset(violin_df, surp_type == "RNNG Surprisal")$surp_value
 transformer = subset(violin_df, surp_type == "Transformer Surprisal")$surp_value
+
+
+wilcox.test(n_gram_word, n_gram_pos, p.adj="holm", exact=F)
 
 wilcoxonZ(n_gram_word, n_gram_pos)/sqrt(2818)
 wilcoxonZ(n_gram_word, n_gram_word_pos)/sqrt(2818)

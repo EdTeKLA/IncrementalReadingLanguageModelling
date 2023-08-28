@@ -36,8 +36,8 @@ for (language in list("S")) {
   # GAMM_24 <- update(GAMM_21, . ~ . + s(n_gram_word_POS_surp, k=3) + ti(n_gram_word_POS_surp, WordNo, k=9) + ti(n_gram_word_POS_surp, WordLength, k=9) + ti(n_gram_word_POS_surp, LogFreq, k=9))
   # saveRDS(GAMM_24, file =paste(save_path, language, "_GAMM_24.rds", sep = ""))
   
-  GAMM_25 <- update(GAMM_21, . ~ . + s(PCFG_total_surp, k=3) + ti(PCFG_total_surp, WordNo, k=9) + ti(PCFG_total_surp, WordLength, k=9) + ti(PCFG_total_surp, LogFreq, k=9))
-  saveRDS(GAMM_25, file =paste(save_path, language, "_GAMM_25.rds", sep = ""))
+  # GAMM_25 <- update(GAMM_21, . ~ . + s(PCFG_total_surp, k=3) + ti(PCFG_total_surp, WordNo, k=9) + ti(PCFG_total_surp, WordLength, k=9) + ti(PCFG_total_surp, LogFreq, k=9))
+  # saveRDS(GAMM_25, file =paste(save_path, language, "_GAMM_25.rds", sep = ""))
   
   GAMM_26 <- update(GAMM_21, . ~ . + s(PCFG_syn_surp, k=3) + ti(PCFG_syn_surp, WordNo, k=9) + ti(PCFG_syn_surp, WordLength, k=9) + ti(PCFG_syn_surp, LogFreq, k=9))
   saveRDS(GAMM_26, file =paste(save_path, language, "_GAMM_26.rds", sep = ""))

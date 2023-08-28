@@ -1,16 +1,16 @@
 from svgutils.compose import Figure, SVG, Text
 
 
-img_path = "../../output/GAMMs/figures/AIC_original_base_model_61_plots/"
+img_path = "../../output/GAMMs/term_significance/"
 num_cols = 2
 num_rows = 2
-width =182
-height = 225
-images = [SVG(f"{img_path}{language}_AIC.svg").scale(0.21) for language in ["E", "C", "K", "S"]]
+width =150
+height = 250
+images = [SVG(f"{img_path}{language}_heatmap.svg").scale(0.3) for language in ["E", "C", "K", "S"]]
 
 
 figure = Figure(width, height, *images).tile(num_cols, num_rows+1)
-figure.save(f'{img_path}AIC_grid.svg')
+figure.save(f'{img_path}heatmap_grid.svg')
 
 # img_path = "/output/GAMMs/images/BIC_plots/"
 # images = [SVG(f"{img_path}{language}_BIC.svg").scale(0.21) for language in ["E", "C", "K", "S"]]

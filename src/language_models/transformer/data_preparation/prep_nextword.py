@@ -80,6 +80,30 @@ freq_dict_loc = '../../../../data/wiki/sequences/word/transformer/wiki_train_val
 
 preprocess(train_loc, preproc_train_loc, emb_dict_loc, freq_dict_loc)
 
+# location of the training pos database
+train_loc = '../../../../data/wiki/sequences/pos/wiki_train_pos.txt'
+
+preproc_train_loc = '../../../../data/wiki/sequences/pos/transformer/wiki_train_pos.txt'
+
+emb_dict_loc = '../../../../data/wiki/sequences/pos/transformer/wiki_train_pos_indices'
+
+freq_dict_loc = '../../../../data/wiki/sequences/pos/transformer/wiki_train_pos_freq'
+
+preprocess(train_loc, preproc_train_loc, emb_dict_loc, freq_dict_loc)
+
+
+# location of the validation pos database
+train_loc = '../../../../data/wiki/sequences/pos/wiki_validation_pos.txt'
+
+preproc_train_loc = '../../../../data/wiki/sequences/pos/transformer/wiki_validation_pos.txt'
+
+emb_dict_loc = '../../../../data/wiki/sequences/pos/transformer/wiki_train_validation_pos_indices'
+
+freq_dict_loc = '../../../../data/wiki/sequences/pos/transformer/wiki_train_validation_pos_freq'
+
+preprocess(train_loc, preproc_train_loc, emb_dict_loc, freq_dict_loc)
+
+
 
 
 

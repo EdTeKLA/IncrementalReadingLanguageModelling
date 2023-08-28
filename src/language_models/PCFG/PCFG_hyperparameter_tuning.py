@@ -1,6 +1,7 @@
 import os
 import math
 import pandas as pd
+import time
 
 from format_surprisals import read_roark_surprisals
 
@@ -32,6 +33,7 @@ def train_and_parse(t, data_type):
 
 
 def main():
+
     thresholds = [0.02, 0.04, 0.05, 0.06, 0.08]
 
     for data_type in ["pos"]:
@@ -48,4 +50,6 @@ def main():
 
 
 if __name__ == "__main__":
+    start_time = time.time()
     main()
+    print("--- %s seconds ---" % (time.time() - start_time))

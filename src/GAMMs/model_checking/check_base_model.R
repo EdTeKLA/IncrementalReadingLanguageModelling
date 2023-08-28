@@ -5,7 +5,7 @@ get_model <- function(language, model_num, type) {
   readRDS(filename)
 }
 
-GAMM_1 <- get_model("E", 1, "original")
+GAMM_1 <- get_model("E", 62, "original")
 
 gam.check(GAMM_1)
 summary(GAMM_1)

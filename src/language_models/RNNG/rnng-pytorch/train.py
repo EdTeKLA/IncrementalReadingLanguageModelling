@@ -390,7 +390,7 @@ def main(args):
   if args.valid_every > 0:
     do_valid(model, optimizer, train_data, val_data, tb, epoch, continuous_epoch, val_losses, args, val_word_ppls, )
 
-  with open(f'output/round_2/val_word_ppls_{args.lr_scheduler}_{args.lr}_{args.dropout}_{args.batch_size}_{args.batch_group}.json', 'w') as file:
+  with open(f'output/round_1/val_word_ppls_{args.lr_scheduler}_{args.lr}_{args.dropout}_{args.batch_size}_{args.batch_group}.json', 'w') as file:
     json.dump({'val_losses': val_losses, 'val_word_ppls': val_word_ppls}, file)
 
   logger.info("Finished training!")

@@ -19,7 +19,7 @@ import os
 import pickle
 import logging
 
-sys.path.append('IncrementalReadingLanguageModelling/src/transformer_and_LSTM/functions/')
+sys.path.append('IncrementalReadingLanguageModelling/src/language_models/transformer/functions/')
 
 from encoders import nwp_transformer, nwp_transformer_2lin
 from nwp_trainer import nwp_trainer
@@ -133,8 +133,11 @@ def load(folder, file_name):
     open_file.close()  
     return line  
 
-train = load(args.data_loc, 'wiki_train_word_final_preprocessed.txt')
-test = load(args.data_loc, 'wiki_validation_word_final_preprocessed.txt')
+# train = load(args.data_loc, 'wiki_train_word.txt')
+# test = load(args.data_loc, 'wiki_validation_word.txt')
+
+train = load(args.data_loc, 'wiki_train_pos.txt')
+test = load(args.data_loc, 'wiki_validation_pos.txt')
 ####################### Neural network setup ##################################
 def create_model(config, args, seeds, model_id = 1, cuda = False):
     # create the network and initialise the parameters
