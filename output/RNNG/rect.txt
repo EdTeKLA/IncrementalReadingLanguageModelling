@@ -1,0 +1,2 @@
+<rect x='87' y='75' width='252.02' height='10' style='stroke-width: 1.07; stroke: none; fill: #FFFFFF;' />
+
