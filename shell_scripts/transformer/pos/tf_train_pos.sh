@@ -5,12 +5,12 @@
 #SBATCH --time=3:00:00
 
 SRC_PATH='IncrementalReadingLanguageModelling/src/language_models/transformer/language_modelling/nwp_tf.py'
-DATA_PATH='IncrementalReadingLanguageModelling/data/WikiText-2/final/word/transformer_and_LSTM/'
-DICT_PATH='wiki_train_word_final_indices'
-SAVE_PATH='IncrementalReadingLanguageModelling/src/language_models/transformer/parameters/'
+DATA_PATH='IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/'
+DICT_PATH='wiki_train_pos_indices'
+SAVE_PATH='IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos/'
 
 module load python/3.9.6
-module load scipy-stack
+module load scipy-stack/2022a
 virtualenv --no-download $SLURM_TMPDIR/env
 source $SLURM_TMPDIR/env/bin/activate
 pip install --no-index --upgrade pip

@@ -5,7 +5,7 @@
 #SBATCH --time=3-0
 
 module load python/3.9.6
-module load scipy-stack
+module load scipy-stack/2022a
 virtualenv --no-download $SLURM_TMPDIR/env
 source $SLURM_TMPDIR/env/bin/activate
 pip install --no-index --upgrade pip
@@ -14,8 +14,8 @@ pip install nltk --no-index
 pip install tensorboard --no-index
 
 SRC_PATH='IncrementalReadingLanguageModelling/src/language_models/transformer/language_modelling/nwp_tf.py'
-DATA_PATH='IncrementalReadingLanguageModelling/data/wiki/sequences/word/transformer/'
-DICT_PATH='wiki_train_word_final_indices'
+DATA_PATH='IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/'
+DICT_PATH='wiki_train_pos_indices'
 
 LR=(0.0002 0.001 0.005 0.025 0.125)
 BATCH_SIZE=(5 10 20 40 80)
@@ -24,7 +24,7 @@ for ((i=0; i<${#LR[*]}; i=i+1))
 do
   for ((j=0; j<${#BATCH_SIZE[*]}; j=j+1))
   do
-    SAVE_PATH="IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_"${LR[i]}"_"${BATCH_SIZE[j]}"/"
+    SAVE_PATH="IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_"${LR[i]}"_"${BATCH_SIZE[j]}"/"
     mkdir $SAVE_PATH
     echo $SAVE_PATH
     time python "$SRC_PATH" -data_loc "$DATA_PATH"  -results_loc "$SAVE_PATH" -dict_loc "$DATA_PATH$DICT_PATH" -lr ${LR[i]} -batch_size ${BATCH_SIZE[j]}
