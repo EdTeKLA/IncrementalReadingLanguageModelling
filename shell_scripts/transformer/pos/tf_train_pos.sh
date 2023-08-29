@@ -10,7 +10,7 @@ DICT_PATH='wiki_train_pos_indices'
 SAVE_PATH='IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos/'
 
 module load python/3.9.6
-module load scipy-stack/2022a
+module load scipy-stack
 virtualenv --no-download $SLURM_TMPDIR/env
 source $SLURM_TMPDIR/env/bin/activate
 pip install --no-index --upgrade pip
