@@ -4,7 +4,7 @@ The code in [rnng-pytorch](rnng-pytorch) is based on the work of Noji & Oseki (2
 
 > https://github.com/aistairc/rnng-pytorch 
 
-> [Effective Batching for Recurrent Neural Network Grammars]() <br>
+> [Effective Batching for Recurrent Neural Network Grammars](https://aclanthology.org/2021.findings-acl.380.pdf) <br>
 > Hiroshi Noji and Yohei Oseki <br>
 > Findings of ACL - ACL-IJCNLP 2021 <br>
 

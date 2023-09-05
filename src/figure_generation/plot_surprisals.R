@@ -274,7 +274,9 @@ head(violin_df)
 
 kruskal.test(surp_value ~ surp_type, data = violin_df)
 kruskal_effsize(data = violin_df, surp_value ~ surp_type)
-pairwise.wilcox.test(violin_df$surp_value, violin_df$surp_type, p.adj="holm", exact=F)
+pairwise.wilcox.test(violin_df$surp_value, violin_df$surp_type, p.adjust.method="holm", exact=F)
+
+
 n_gram_word = subset(violin_df, surp_type == "N-Gram Word Surprisal")$surp_value
 n_gram_pos = subset(violin_df, surp_type == "N-Gram POS Surprisal")$surp_value
 n_gram_word_pos = subset(violin_df, surp_type == "N-Gram Word/POS Surprisal")$surp_value
@@ -286,7 +288,51 @@ RNNG = subset(violin_df, surp_type == "RNNG Surprisal")$surp_value
 transformer = subset(violin_df, surp_type == "Transformer Surprisal")$surp_value
 
 
-wilcox.test(n_gram_word, n_gram_pos, p.adj="holm", exact=F)
+wilcox.test(n_gram_word, n_gram_pos, exact=F)
+wilcox.test(n_gram_word, n_gram_word_pos, exact=F)
+wilcox.test(n_gram_word, PCFG_total, exact=F)
+wilcox.test(n_gram_word, PCFG_lex, exact=F)
+wilcox.test(n_gram_word, PCFG_syn, exact=F)
+wilcox.test(n_gram_word, PCFG_pos, exact=F)
+wilcox.test(n_gram_word, RNNG, exact=F)
+wilcox.test(n_gram_word, transformer, exact=F)
+
+wilcox.test(n_gram_pos, n_gram_word_pos, exact=F)
+wilcox.test(n_gram_pos, PCFG_total, exact=F)
+wilcox.test(n_gram_pos, PCFG_lex, exact=F)
+wilcox.test(n_gram_pos, PCFG_syn, exact=F)
+wilcox.test(n_gram_pos, PCFG_pos, exact=F)
+wilcox.test(n_gram_pos, RNNG, exact=F)
+wilcox.test(n_gram_pos, transformer, exact=F)
+
+wilcox.test(n_gram_word_pos, PCFG_total, exact=F)
+wilcox.test(n_gram_word_pos, PCFG_lex, exact=F)
+wilcox.test(n_gram_word_pos, PCFG_syn, exact=F)
+wilcox.test(n_gram_word_pos, PCFG_pos, exact=F)
+wilcox.test(n_gram_word_pos, RNNG, exact=F)
+wilcox.test(n_gram_word_pos, transformer, exact=F)
+
+wilcox.test(PCFG_total, PCFG_lex, exact=F)
+wilcox.test(PCFG_total, PCFG_syn, exact=F)
+wilcox.test(PCFG_total, PCFG_pos, exact=F)
+wilcox.test(PCFG_total, RNNG, exact=F)
+wilcox.test(PCFG_total, transformer, exact=F)
+
+wilcox.test(PCFG_lex, PCFG_syn, exact=F)
+wilcox.test(PCFG_lex, PCFG_pos, exact=F)
+wilcox.test(PCFG_lex, RNNG, exact=F)
+wilcox.test(PCFG_lex, transformer, exact=F)
+
+wilcox.test(PCFG_syn, PCFG_pos, exact=F)
+wilcox.test(PCFG_syn, RNNG, exact=F)
+wilcox.test(PCFG_syn, transformer, exact=F)
+
+wilcox.test(PCFG_pos, RNNG, exact=F)
+wilcox.test(PCFG_pos, transformer, exact=F)
+
+wilcox.test(RNNG, transformer, exact=F)
+
+
 
 wilcoxonZ(n_gram_word, n_gram_pos)/sqrt(2818)
 wilcoxonZ(n_gram_word, n_gram_word_pos)/sqrt(2818)

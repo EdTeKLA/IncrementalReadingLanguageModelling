@@ -124,8 +124,8 @@ save_path <- "/Users/shannon/Documents/IncrementalReadingLanguageModelling/outpu
 
 
 ggplot(subset(data, language == "English"), aes(x = language_model , y = term, fill = significance)) +
-  geom_tile(colour=geom_col, size = geom_size) +
-  scale_fill_manual(values = c("Significant" = "#585858", "Non-Significant" = "#dedede", "N/A" = "white")) +
+  geom_tile() +
+  scale_fill_manual(values = c("Significant" = "#27374D", "Non-Significant" = "#9DB2BF", "N/A" = "#DDE6ED")) +
   coord_fixed() +
   scale_x_discrete(guide = guide_axis(angle = angle)) +
   labs(x=" ", y = "Term", title = "English") +
@@ -145,8 +145,8 @@ ggsave(filename ="E_heatmap.svg", path = save_path, width=width, height=height, 
 ggsave(filename ="E_heatmap.png", path = save_path, width=width, height=height, device="png")
 
 ggplot(subset(data, language == "Chinese"), aes(x = language_model , y = term, fill = significance)) +
-  geom_tile(colour=geom_col, size = geom_size) +
-  scale_fill_manual(values = c("Significant" = "#585858", "Non-Significant" = "#dedede", "N/A" = "white")) +
+  geom_tile() +
+  scale_fill_manual(values = c("Significant" = "#27374D", "Non-Significant" = "#9DB2BF", "N/A" = "#DDE6ED")) +
   coord_fixed() +
   scale_x_discrete(guide = guide_axis(angle = angle)) +
   labs(x=" ", y = "Term", title = "Chinese") +
@@ -166,8 +166,8 @@ ggsave(filename ="C_heatmap.svg", path = save_path, width=width, height=height, 
 ggsave(filename ="C_heatmap.png", path = save_path, width=width, height=height, device="png")
 
 ggplot(subset(data, language == "Korean"), aes(x = language_model , y = term, fill = significance)) +
-  geom_tile(colour=geom_col, size = geom_size) +
-  scale_fill_manual(values = c("Significant" = "#585858", "Non-Significant" = "#dedede", "N/A" = "white")) +
+  geom_tile() +
+  scale_fill_manual(values = c("Significant" = "#27374D", "Non-Significant" = "#9DB2BF", "N/A" = "#DDE6ED")) +
   coord_fixed() +
   scale_x_discrete(guide = guide_axis(angle = angle)) +
   labs(x="Surprisal Type", y = "Term", title = "Korean") +
@@ -187,8 +187,8 @@ ggsave(filename ="K_heatmap.svg", path = save_path, width=width, height=height, 
 ggsave(filename ="K_heatmap.png", path = save_path, width=width, height=height, device="png")
 
 ggplot(subset(data, language == "Spanish"), aes(x = language_model , y = term, fill = significance)) +
-  geom_tile(colour=geom_col, size = geom_size) +
-  scale_fill_manual(values = c("Significant" = "#585858", "Non-Significant" = "#dedede", "N/A" = "white")) +
+  geom_tile() +
+  scale_fill_manual(values = c("Significant" = "#27374D", "Non-Significant" = "#9DB2BF", "N/A" = "#DDE6ED")) +
   coord_fixed() +
   scale_x_discrete(guide = guide_axis(angle = angle)) +
   labs(x="Surprisal Type", y = "Term", title = "Spanish") +

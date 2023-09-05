@@ -60,7 +60,8 @@ m_2 <- bam(log(RT)~ s(Subject, bs = "fs") +
              s(WordLength) + 
              s(LogFreq) + 
              ti(LogFreq, WordLength) + 
-             s(WordLengthPrev1) + s(LogFreqPrev1) + 
+             s(WordLengthPrev1) + 
+             s(LogFreqPrev1) + 
              ti(LogFreqPrev1, WordLengthPrev1) + 
              s(n_gram_word_surp) + 
              ti(n_gram_word_surp, WordLength) + 

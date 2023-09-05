@@ -12,8 +12,10 @@ output/PCFG/test
 output/PCFG/parse_test*
 output/RNNG/beam_search
 output/RNNG/hyperparameter_tuning
-output/transformer/hyperparameter_tuning
-output/transformer/test
+output/transformer/pos/hyperparameter_tuning
+output/transformer/word/hyperparameter_tuning
+output/transformer/pos/test
+output/transformer/word/test
 
 src/language_models/PCFG/incremental-top-down-parser/hyperparameter_tuning
 src/language_models/PCFG/incremental-top-down-parser/stanford-tregex-4.0.0

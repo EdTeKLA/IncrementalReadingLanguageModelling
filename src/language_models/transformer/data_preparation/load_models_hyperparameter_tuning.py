@@ -16,15 +16,16 @@ import argparse
 
 # make sure this script is in the same folder as the functions folder of the
 # nwp project
-sys.path.append('IncrementalReadingLanguageModelling/src/transformer/functions')
+sys.path.append('IncrementalReadingLanguageModelling/src/language_models/transformer/functions')
 
 from collections import defaultdict
 from encoders import *
 from prep_text import word_2_index
 
+data_type = "pos"
 parser = argparse.ArgumentParser(description='Get file name')
 parser.add_argument('-data_loc', type=str,
-                    default='IncrementalReadingLanguageModelling/data/stimuli/L1/stimuli_L1_word.txt',
+                    default='IncrementalReadingLanguageModelling/data/stimuli/L1/stimuli_L1_data_type.txt',
                     help='location of the sentences we want surprisal values for')
 
 parser.add_argument('-output_id', type=str,
@@ -36,11 +37,11 @@ batch_sizes = [5, 10, 20, 40, 80]
 
 for lr in lrs:
     for batch_size in batch_sizes:
-        model_loc = f'IncrementalReadingLanguageModelling/src/transformer_and_LSTM/parameters_{lr}_{batch_size}'
+        model_loc = f'IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_{data_type}_{lr}_{batch_size}'
         # location of a pre-trained model
         # location of the sentences to be encoded.
         data_loc = args.data_loc
-        dict_loc = 'IncrementalReadingLanguageModelling/data/WikiText-2/final/word/transformer_and_LSTM/wiki_train_word_final_indices'
+        dict_loc = f'IncrementalReadingLanguageModelling/data/wiki/sequences/{data_type}/transformer/wiki_train_{data_type}_indices'
 
         # list all the pretrained models
         model_list = [x for x in os.walk(model_loc)]
@@ -266,5 +267,6 @@ for lr in lrs:
         data.sent_nr = data.sent_nr.astype(int)
         data.word_pos = data.word_pos.astype(int)
         output_id = args.output_id
-        output_path = f'IncrementalReadingLanguageModelling/output/transformer_and_LSTM/{output_id}_{lr}_{batch_size}.csv'
+        output_path = f'IncrementalReadingLanguageModelling/output/transformer/{data_type}/hyperparameter_tuning/{output_id[0]}/{output_id}_{lr}_{batch_size}.csv'
         data.to_csv(path_or_buf=output_path, index=False)
+

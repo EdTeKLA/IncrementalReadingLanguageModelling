@@ -2,7 +2,7 @@ library(dplyr)
 library(DescTools)
 
 # load data
-data_path <- "../../../output/GAMMs/all_data.csv"
+data_path <- "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/all_data.csv"
 
 data <- read.csv(data_path)
 head(data)
