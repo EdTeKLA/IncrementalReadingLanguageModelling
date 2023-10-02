@@ -15,7 +15,7 @@ pip install tensorboard --no-index
 
 
 SRC_PATH='IncrementalReadingLanguageModelling/src/language_models/transformer/data_preparation/load_model.py'
-OUTPUT_ID='4_test_1620_sentences'
+OUTPUT_ID='4_test_word_1620_sentences'
 DATA_LOC='IncrementalReadingLanguageModelling/data/wiki/sequences/word/transformer/test/'$OUTPUT_ID'.txt'
 
 python $SRC_PATH -data_loc "$DATA_LOC" -output_id "$OUTPUT_ID"

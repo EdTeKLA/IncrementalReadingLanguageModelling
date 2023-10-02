@@ -2,10 +2,10 @@
 #SBATCH --gpus-per-node=v100l:1  # Request GPU "generic resources"
 #SBATCH --cpus-per-task=6        # Cores proportional to GPUs: 6 on Cedar, 16 on Graham.
 #SBATCH --mem=32000M             # Memory proportional to GPUs: 32000 Cedar, 64000 Graham.
-#SBATCH --time=5-0
+#SBATCH --time=1-12
 
 module load python/3.9.6
-module load scipy-stack
+module load scipy-stack/2022a
 virtualenv --no-download $SLURM_TMPDIR/env
 source $SLURM_TMPDIR/env/bin/activate
 pip install --no-index --upgrade pip
@@ -14,15 +14,18 @@ pip install nltk --no-index
 pip install tensorboard --no-index
 
 SRC_PATH='IncrementalReadingLanguageModelling/src/language_models/RNNG/rnng-pytorch/train.py'
-TRAIN_PATH='IncrementalReadingLanguageModelling/data/wiki/trees/word/wiki-train.json'
-VAL_PATH='IncrementalReadingLanguageModelling/data/wiki/trees/word/wiki-val.json'
+TRAIN_PATH='IncrementalReadingLanguageModelling/data/wiki/trees/pos_trees/wiki-train-pos.json'
+VAL_PATH='IncrementalReadingLanguageModelling/data/wiki/trees/pos_trees/wiki-val-pos.json'
 SAVE_PATH='IncrementalReadingLanguageModelling/src/language_models/RNNG/rnng-pytorch/'
 
 
 LR_SCHEDULER=('None')
-LR=(0.002 0.01 0.05)
-DROPOUT=(0 0.1 0.2 0.3 0.4)
-BATCH_SIZE=(128 256)
+#LR=(0.0002 0.001 0.005)
+LR=(0.005)
+#DROPOUT=(0 0.1 0.2 0.3 0.4)
+DROPOUT=(0.2 0.3 0.4)
+#BATCH_SIZE=(128 256)
+BATCH_SIZE=(256)
 BATCH_GROUP=('random')
 for ((i=0; i<${#LR_SCHEDULER[*]}; i=i+1))
 do
@@ -34,8 +37,8 @@ do
       do
         for ((m=0; m<${#BATCH_GROUP[*]}; m=m+1))
         do
-          OUTPUT_PATH_NAME="output/round_2/wiki_time_${LR_SCHEDULER[i]}""_"${LR[j]}"_"${DROPOUT[k]}"_"${BATCH_SIZE[l]}"_"${BATCH_GROUP[m]}".txt"
-          SAVE_PATH_NAME="$SAVE_PATH${LR_SCHEDULER[i]}""_"${LR[j]}"_"${DROPOUT[k]}"_"${BATCH_SIZE[l]}"_"${BATCH_GROUP[m]}"_wiki.pt"
+          OUTPUT_PATH_NAME="output/round_2/wiki_pos_time_${LR_SCHEDULER[i]}""_"${LR[j]}"_"${DROPOUT[k]}"_"${BATCH_SIZE[l]}"_"${BATCH_GROUP[m]}".txt"
+          SAVE_PATH_NAME="$SAVE_PATH${LR_SCHEDULER[i]}""_"${LR[j]}"_"${DROPOUT[k]}"_"${BATCH_SIZE[l]}"_"${BATCH_GROUP[m]}"_wiki_pos.pt"
           echo $SAVE_PATH_NAME
           echo $OUTPUT_PATH_NAME
           if [ ${LR_SCHEDULER[i]} = 'None' ];

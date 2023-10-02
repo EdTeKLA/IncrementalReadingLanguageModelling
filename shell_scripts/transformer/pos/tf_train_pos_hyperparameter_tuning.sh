@@ -18,6 +18,7 @@ DATA_PATH='IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transform
 DICT_PATH='wiki_train_pos_indices'
 
 LR=(0.0002 0.001 0.005 0.025 0.125)
+#LR=(0.25 0.5 0.75)
 BATCH_SIZE=(5 10 20 40 80)
 
 for ((i=0; i<${#LR[*]}; i=i+1))

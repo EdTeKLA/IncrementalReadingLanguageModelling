@@ -18,11 +18,11 @@ pip install tensorboard --no-index
 SRC_PATH='IncrementalReadingLanguageModelling/src/language_models/transformer/data_preparation/load_model.py'
 
 DATA_LOC='IncrementalReadingLanguageModelling/data/stimuli/L1/stimuli_L1_word.txt'
-OUTPUT_ID='L1'
+OUTPUT_ID='L1_word'
 python $SRC_PATH -data_loc "$DATA_LOC" -output_id "$OUTPUT_ID"
 
 DATA_LOC='IncrementalReadingLanguageModelling/data/stimuli/L2/stimuli_L2_word.txt'
-OUTPUT_ID='L2'
+OUTPUT_ID='L2_word'
 python $SRC_PATH -data_loc "$DATA_LOC" -output_id "$OUTPUT_ID"
 
 
