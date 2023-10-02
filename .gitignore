@@ -10,8 +10,8 @@ output/n-gram/*/wiki_test*
 output/n-gram/*/wiki_validation*
 output/PCFG/test
 output/PCFG/parse_test*
-output/RNNG/beam_search
-output/RNNG/hyperparameter_tuning
+output/RNNG/*/beam_search
+output/RNNG/*/hyperparameter_tuning
 output/transformer/pos/hyperparameter_tuning
 output/transformer/word/hyperparameter_tuning
 output/transformer/pos/test
@@ -23,6 +23,8 @@ src/language_models/PCFG/incremental-top-down-parser/normalized_wiki_train_trees
 src/language_models/PCFG/incremental-top-down-parser/normalized_wiki_train_trees_pos.txt
 src/language_models/RNNG/rnng-pytorch/*.pt
 src/wiki_preprocessing/stanford_parser
+
+experimental_setup/
 
 
 # Byte-compiled / optimized / DLL files
