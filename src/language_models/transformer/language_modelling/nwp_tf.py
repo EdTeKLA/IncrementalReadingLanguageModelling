@@ -102,23 +102,23 @@ def load_obj(loc):
 # get the size of the dictionary and add 1 for the zero or padding embedding
 dict_size = len(load_obj(args.dict_loc)) + 1 
 # config settings for the transformer
-# config = {'embed': {'n_embeddings': dict_size,'embedding_dim': 400,
-#                     'sparse': False, 'padding_idx':0
-#                     },
-#           'tf':{'in_size':400, 'fc_size': 1024,'n_layers': 2,'h': 8,
-#                 'max_len': 54
-#                 },
-#           'cuda': cuda
-#           }
-
-config = {'embed': {'n_embeddings': dict_size,'embedding_dim': 96,
+config = {'embed': {'n_embeddings': dict_size,'embedding_dim': 400,
                     'sparse': False, 'padding_idx':0
                     },
-          'tf':{'in_size':96, 'fc_size': 256,'n_layers': 1,'h': 8,
+          'tf':{'in_size':400, 'fc_size': 1024,'n_layers': 2,'h': 8,
                 'max_len': 54
                 },
           'cuda': cuda
           }
+
+# config = {'embed': {'n_embeddings': dict_size,'embedding_dim': 96,
+#                     'sparse': False, 'padding_idx':0
+#                     },
+#           'tf':{'in_size':96, 'fc_size': 256,'n_layers': 1,'h': 8,
+#                 'max_len': 54
+#                 },
+#           'cuda': cuda
+#           }
 
 # set the seeds for numpy and torch, call before training each model
 def rand_seed(seeds, model_id = 1):

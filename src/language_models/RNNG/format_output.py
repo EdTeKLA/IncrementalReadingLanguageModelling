@@ -60,8 +60,8 @@ def get_output(output_path, dataset):
 def main():
     dataset = 'wiki'
     for tuning_round in range(1,3):
-        output_path = Path(f'../../../output/RNNG/hyperparameter_tuning/pos/tuning_round_{tuning_round}/')
-        new_output_path = Path(f'../../../output/RNNG/hyperparameter_tuning/pos/round_{tuning_round}_wiki_parameter_results.csv')
+        output_path = Path(f'../../../output/RNNG/pos/hyperparameter_tuning/tuning_round_{tuning_round}/')
+        new_output_path = Path(f'../../../output/RNNG/pos/hyperparameter_tuning/round_{tuning_round}_wiki_parameter_results.csv')
         results = get_output(output_path, dataset)
         results.to_csv(new_output_path, index=False)
 

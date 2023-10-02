@@ -128,7 +128,7 @@ ggplot(subset(data, language == "English"), aes(x = language_model , y = term, f
   scale_fill_manual(values = c("Significant" = "#27374D", "Non-Significant" = "#9DB2BF", "N/A" = "#DDE6ED")) +
   coord_fixed() +
   scale_x_discrete(guide = guide_axis(angle = angle)) +
-  labs(x=" ", y = "Term", title = "English") +
+  labs(x=" ", y = "Term", title = "English\n(SVO, right-branching)") +
   theme(legend.position = legend_pos,
         legend.title = element_blank(),
         legend.text = element_text(colour = 'black', size = small_font-2),
@@ -149,7 +149,7 @@ ggplot(subset(data, language == "Chinese"), aes(x = language_model , y = term, f
   scale_fill_manual(values = c("Significant" = "#27374D", "Non-Significant" = "#9DB2BF", "N/A" = "#DDE6ED")) +
   coord_fixed() +
   scale_x_discrete(guide = guide_axis(angle = angle)) +
-  labs(x=" ", y = "Term", title = "Chinese") +
+  labs(x=" ", y = "Term", title = "Chinese\n(SVO, left-branching)") +
   theme(legend.position = legend_pos,
         legend.title = element_blank(),
         legend.text = element_text(colour = 'black', size = small_font-2),
@@ -170,7 +170,7 @@ ggplot(subset(data, language == "Korean"), aes(x = language_model , y = term, fi
   scale_fill_manual(values = c("Significant" = "#27374D", "Non-Significant" = "#9DB2BF", "N/A" = "#DDE6ED")) +
   coord_fixed() +
   scale_x_discrete(guide = guide_axis(angle = angle)) +
-  labs(x="Surprisal Type", y = "Term", title = "Korean") +
+  labs(x="Surprisal Type", y = "Term", title = "Korean\n(SOV, left-branching)") +
   theme(legend.position = legend_pos,
         legend.title = element_blank(),
         legend.text = element_text(colour = 'black', size = small_font-2),
@@ -191,7 +191,7 @@ ggplot(subset(data, language == "Spanish"), aes(x = language_model , y = term, f
   scale_fill_manual(values = c("Significant" = "#27374D", "Non-Significant" = "#9DB2BF", "N/A" = "#DDE6ED")) +
   coord_fixed() +
   scale_x_discrete(guide = guide_axis(angle = angle)) +
-  labs(x="Surprisal Type", y = "Term", title = "Spanish") +
+  labs(x="Surprisal Type", y = "Term", title = "Spanish\n(SVO, right-branching)") +
   theme(legend.position = legend_pos,
         legend.title = element_blank(),
         legend.text = element_text(colour = 'black', size = small_font-2),

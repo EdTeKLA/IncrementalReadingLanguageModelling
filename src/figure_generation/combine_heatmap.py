@@ -5,7 +5,7 @@ img_path = "../../output/GAMMs/term_significance/"
 num_cols = 2
 num_rows = 2
 width =150
-height = 250
+height = 265
 images = [SVG(f"{img_path}{language}_heatmap.svg").scale(0.3) for language in ["E", "C", "K", "S"]]
 
 

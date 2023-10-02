@@ -5,7 +5,7 @@ img_path = "../../output/GAMMs/figures/AIC_original_base_model_61_plots/"
 num_cols = 2
 num_rows = 2
 width =182
-height = 225
+height = 235
 images = [SVG(f"{img_path}{language}_AIC.svg").scale(0.21) for language in ["E", "C", "K", "S"]]
 
 

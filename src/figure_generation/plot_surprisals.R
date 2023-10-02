@@ -176,10 +176,10 @@ size = 1.5
 
 plot1 <- ggplot(violin_lex_df, aes(x = surp_type, y = surp_value, fill = surp_type)) +
   geom_violin(show.legend = FALSE, color ='black', size=0.3) +
-  labs(y="Value") +
+  labs(y="Surprisal") +
   geom_boxplot(width=box_width, outlier.size = 0,show.legend = FALSE, color ='black', size=0.4) +
   scale_y_continuous(expand = c(0, 0),lim=c(0,30)) +
-  scale_x_discrete(guide = guide_axis(angle = angle)) +
+  scale_x_discrete(guide = guide_axis(angle = angle), labels =c("N-Gram Word", "N-Gram Word/POS", "PCFG Total", "PCFG Lexical", "RNNG", "Transformer")) +
   scale_fill_manual(values=colours_lex) +
   theme(plot.margin = margin(margin_2,margin,margin_2,margin_2, "cm"),
         axis.title.y = element_text(margin = margin(r = 12)),
@@ -195,10 +195,10 @@ ggsave(filename ="lex.svg", path = save_path, width=width, height=height, device
 
 plot2 <- ggplot(violin_syn_df, aes(x = surp_type, y = surp_value, fill = surp_type)) +
   geom_violin(show.legend = FALSE, color ='black', size=0.3) +
-  labs(y="Value") +
+  labs(y="Surprisal") +
   geom_boxplot(width=box_width, outlier.size = 0,show.legend = FALSE, color ='black', size=0.4) +
   scale_y_continuous(expand = c(0, 0), lim=c(0,30)) +
-  scale_x_discrete(guide = guide_axis(angle = angle)) +
+  scale_x_discrete(guide = guide_axis(angle = angle), labels =c("N-Gram POS", "PCFG Syntactic", "PCFG POS")) +
   scale_fill_manual(values=colours_syn) +
   theme(plot.margin = margin(margin_2,margin,margin_2,margin_2),
         axis.text.x =  element_text(colour = 'black', size = 12),

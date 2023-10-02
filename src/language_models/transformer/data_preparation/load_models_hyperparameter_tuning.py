@@ -34,9 +34,13 @@ parser.add_argument('-output_id', type=str,
 args = parser.parse_args()
 lrs = [0.0002, 0.001, 0.005, 0.025, 0.125]
 batch_sizes = [5, 10, 20, 40, 80]
+# lrs = [0.126]
+# batch_sizes = [5]
 
 for lr in lrs:
     for batch_size in batch_sizes:
+        if batch_size == 80 and lr == 0.125:
+            continue
         model_loc = f'IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_{data_type}_{lr}_{batch_size}'
         # location of a pre-trained model
         # location of the sentences to be encoded.

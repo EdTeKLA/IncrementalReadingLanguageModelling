@@ -50,7 +50,7 @@ ggplot(newdata, aes(x = surprisal, y = delta_AIC, fill=surprisal)) +
   scale_x_discrete(guide = guide_axis(angle = angle)) +
   ylim(0, 90) +
   ylab("\u0394AIC") +
-  ggtitle("English") +
+  ggtitle("English\n(SVO, right-branching)") +
   scale_fill_manual(values=newdata$colour) +
   theme(plot.margin = margin(margin_2,margin,margin_2,margin_2, "cm"),
         axis.title.y = element_text(margin = margin(r = 12)),
@@ -72,7 +72,7 @@ ggplot(newdata, aes(x = surprisal, y = delta_AIC, fill=surprisal)) +
   scale_x_discrete(guide = guide_axis(angle = angle)) +
   ylim(0, 60) +
   ylab("\u0394AIC") +
-  ggtitle("Chinese") +
+  ggtitle("Chinese\n(SVO, left-branching)") +
   scale_fill_manual(values=newdata$colour) +
   theme(plot.margin = margin(margin_2,margin,margin_2,margin_2, "cm"),
         axis.title.y = element_text(margin = margin(r = 12)),
@@ -96,7 +96,7 @@ ggplot(newdata, aes(x = surprisal, y = delta_AIC, fill=surprisal)) +
   scale_x_discrete(guide = guide_axis(angle = angle)) +
   ylim(-10, 20) +
   ylab("\u0394AIC") +
-  ggtitle("Korean") +
+  ggtitle("Korean\n(SOV, left-branching)") +
   scale_fill_manual(values=newdata$colour) +
   theme(plot.margin = margin(margin_2,margin,margin_2,margin_2, "cm"),
         axis.title.y = element_text(margin = margin(r = 12)),
@@ -120,7 +120,7 @@ ggplot(newdata, aes(x = surprisal, y = delta_AIC, fill=surprisal)) +
   scale_x_discrete(guide = guide_axis(angle = angle)) +
   ylim(0, 90) +
   ylab("\u0394AIC") +
-  ggtitle("Spanish") +
+  ggtitle("Spanish\n(SVO, right-branching)") +
   scale_fill_manual(values=newdata$colour) +
   theme(plot.margin = margin(margin_2,margin,margin_2,margin_2, "cm"),
         axis.title.y = element_text(margin = margin(r = 12)),
