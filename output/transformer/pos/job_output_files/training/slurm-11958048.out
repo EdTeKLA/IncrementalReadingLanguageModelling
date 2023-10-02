@@ -1,0 +1,2051 @@
+created virtual environment CPython3.9.6.final.0-64 in 3030ms
+  creator CPython3Posix(dest=/localscratch/src.11958048.0/env, clear=False, global=False)
+  seeder FromAppData(download=False, pip=latest, setuptools=latest, wheel=latest, via=copy, app_data_dir=/home/src/.local/share/virtualenv/seed-app-data/v1.0.1)
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+Ignoring pip: markers 'python_version < "3"' don't match your environment
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2020/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2020/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pip-23.0+computecanada-py3-none-any.whl
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 20.0.2
+    Uninstalling pip-20.0.2:
+      Successfully uninstalled pip-20.0.2
+Successfully installed pip-23.0+computecanada
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2020/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2020/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2/torch-2.0.1+computecanada-cp39-cp39-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/filelock-3.12.0+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/networkx-3.1+computecanada-py3-none-any.whl
+Requirement already satisfied: sympy in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/lib/python3.9/site-packages (from torch) (1.12+computecanada)
+Requirement already satisfied: jinja2 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/lib/python3.9/site-packages (from torch) (3.1.2+computecanada)
+Requirement already satisfied: typing-extensions in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/lib/python3.9/site-packages (from torch) (4.7.1+computecanada)
+Requirement already satisfied: MarkupSafe>=2.0 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/lib/python3.9/site-packages (from jinja2->torch) (2.1.3+computecanada)
+Requirement already satisfied: mpmath>=0.19 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/lib/python3.9/site-packages (from sympy->torch) (1.3.0+computecanada)
+Installing collected packages: networkx, filelock, torch
+Successfully installed filelock-3.12.0+computecanada networkx-3.1+computecanada torch-2.0.1+computecanada
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2020/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2020/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/nltk-3.8.1+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/regex-2023.8.8+computecanada-cp39-cp39-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/click-8.1.7+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tqdm-4.66.1+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/joblib-1.3.2+computecanada-py3-none-any.whl
+Installing collected packages: tqdm, regex, joblib, click, nltk
+Successfully installed click-8.1.7+computecanada joblib-1.3.2+computecanada nltk-3.8.1+computecanada regex-2023.8.8+computecanada tqdm-4.66.1+computecanada
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2020/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2020/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tensorboard-2.13.0+computecanada-py3-none-any.whl
+Requirement already satisfied: wheel>=0.26 in /localscratch/src.11958048.0/env/lib/python3.9/site-packages (from tensorboard) (0.34.2)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic/grpcio-1.57.0+computecanada-cp39-cp39-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/absl_py-1.4.0+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/google_auth-2.22.0+computecanada-py2.py3-none-any.whl
+Requirement already satisfied: setuptools>=41.0.0 in /localscratch/src.11958048.0/env/lib/python3.9/site-packages (from tensorboard) (46.1.3)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/google_auth_oauthlib-1.0.0+computecanada-py2.py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2/protobuf-4.22.2+computecanada-cp39-cp39-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/Markdown-3.4.4+computecanada-py3-none-any.whl
+Requirement already satisfied: requests<3,>=2.21.0 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/lib/python3.9/site-packages (from tensorboard) (2.31.0+computecanada)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/werkzeug-2.3.7+computecanada-py3-none-any.whl
+Requirement already satisfied: numpy>=1.12.0 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/lib/python3.9/site-packages (from tensorboard) (1.25.2+computecanada)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tensorboard_data_server-0.7.0+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/urllib3-1.26.15+computecanada-py2.py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/cachetools-5.3.1+computecanada-py3-none-any.whl
+Requirement already satisfied: six>=1.9.0 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/ipykernel/2023b/lib/python3.9/site-packages (from google-auth<3,>=1.6.3->tensorboard) (1.16.0+computecanada)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/rsa-4.9+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pyasn1_modules-0.3.0+computecanada-py2.py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/requests_oauthlib-1.3.1+computecanada-py2.py3-none-any.whl
+Requirement already satisfied: importlib-metadata>=4.4 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/ipykernel/2023b/lib/python3.9/site-packages (from markdown>=2.6.8->tensorboard) (6.8.0+computecanada)
+Requirement already satisfied: charset-normalizer<4,>=2 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/lib/python3.9/site-packages (from requests<3,>=2.21.0->tensorboard) (3.2.0+computecanada)
+Requirement already satisfied: idna<4,>=2.5 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/lib/python3.9/site-packages (from requests<3,>=2.21.0->tensorboard) (3.4+computecanada)
+Requirement already satisfied: certifi>=2017.4.17 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/lib/python3.9/site-packages (from requests<3,>=2.21.0->tensorboard) (2023.7.22+computecanada)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/lib/python3.9/site-packages (from werkzeug>=1.0.1->tensorboard) (2.1.3+computecanada)
+Requirement already satisfied: zipp>=0.5 in /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/ipykernel/2023b/lib/python3.9/site-packages (from importlib-metadata>=4.4->markdown>=2.6.8->tensorboard) (3.16.2+computecanada)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pyasn1-0.5.0+computecanada-py2.py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/oauthlib-3.2.2+computecanada-py3-none-any.whl
+Installing collected packages: werkzeug, urllib3, tensorboard-data-server, pyasn1, protobuf, oauthlib, grpcio, cachetools, absl-py, rsa, pyasn1-modules, markdown, requests-oauthlib, google-auth, google-auth-oauthlib, tensorboard
+  Attempting uninstall: urllib3
+    Found existing installation: urllib3 2.0.4+computecanada
+    Not uninstalling urllib3 at /cvmfs/soft.computecanada.ca/easybuild/software/2020/avx2/Core/scipy-stack/2023b/lib/python3.9/site-packages, outside environment /localscratch/src.11958048.0/env
+    Can't uninstall 'urllib3'. No files were found to uninstall.
+Successfully installed absl-py-1.4.0+computecanada cachetools-5.3.1+computecanada google-auth-2.22.0+computecanada google-auth-oauthlib-1.0.0+computecanada grpcio-1.57.0+computecanada markdown-3.4.4+computecanada oauthlib-3.2.2+computecanada protobuf-4.22.2+computecanada pyasn1-0.5.0+computecanada pyasn1-modules-0.3.0+computecanada requests-oauthlib-1.3.1+computecanada rsa-4.9+computecanada tensorboard-2.13.0+computecanada tensorboard-data-server-0.7.0+computecanada urllib3-1.26.15+computecanada werkzeug-2.3.7+computecanada
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_5/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_5/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_5/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 5
+INFO:root:lr: 0.0002
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.0002
+    lr: 0.0002
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b3cb9a72f10>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 3.0429623413085936
+Training time: 2.044116258621216
+INFO:nwp_trainer:Loss after 3000 sentences: 2.69051025390625
+Training time: 5.9067559242248535
+INFO:nwp_trainer:Loss after 10000 sentences: 2.435840087890625
+Training time: 19.4683256149292
+INFO:nwp_trainer:Loss after 30000 sentences: 2.27931396484375
+Training time: 57.44614863395691
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 6.513s
+training loss:		4.598763
+validation loss:		4.592422
+Epoch 1 of 8 took 63.538s
+training loss:		2.049842
+validation loss:		2.032941
+Epoch 2 of 8 took 63.898s
+training loss:		2.025467
+validation loss:		2.007309
+Epoch 3 of 8 took 64.117s
+training loss:		2.017410
+validation loss:		1.999067
+Epoch 4 of 8 took 63.870s
+training loss:		2.010327
+validation loss:		1.992990
+Epoch 5 of 8 took 63.598s
+training loss:		2.008173
+validation loss:		1.990997
+Epoch 6 of 8 took 63.613s
+training loss:		2.005663
+validation loss:		1.989198
+Epoch 7 of 8 took 64.932s
+training loss:		2.005215
+validation loss:		1.988141
+Epoch 8 of 8 took 63.035s
+training loss:		2.004887
+validation loss:		1.988090
+
+real	30m30.575s
+user	30m13.164s
+sys	0m9.866s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_10/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_10/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_10/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 10
+INFO:root:lr: 0.0002
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.0002
+    lr: 0.0002
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b16f7c04b20>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 3.3326315307617187
+Training time: 1.0521697998046875
+INFO:nwp_trainer:Loss after 3000 sentences: 2.886585693359375
+Training time: 3.1993203163146973
+INFO:nwp_trainer:Loss after 10000 sentences: 2.565085205078125
+Training time: 10.509865522384644
+INFO:nwp_trainer:Loss after 30000 sentences: 2.3668186848958332
+Training time: 31.232916593551636
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 3.600s
+training loss:		4.597057
+validation loss:		4.590302
+Epoch 1 of 8 took 34.746s
+training loss:		2.073662
+validation loss:		2.052340
+Epoch 2 of 8 took 34.676s
+training loss:		2.047884
+validation loss:		2.028061
+Epoch 3 of 8 took 34.834s
+training loss:		2.033552
+validation loss:		2.014269
+Epoch 4 of 8 took 34.783s
+training loss:		2.024316
+validation loss:		2.005497
+Epoch 5 of 8 took 34.665s
+training loss:		2.020771
+validation loss:		2.002636
+Epoch 6 of 8 took 34.552s
+training loss:		2.016188
+validation loss:		1.998064
+Epoch 7 of 8 took 34.501s
+training loss:		2.013928
+validation loss:		1.995662
+Epoch 8 of 8 took 34.821s
+training loss:		2.013064
+validation loss:		1.994839
+
+real	16m42.365s
+user	16m31.819s
+sys	0m5.707s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_20/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_20/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_20/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 20
+INFO:root:lr: 0.0002
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.0002
+    lr: 0.0002
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2baacc320b80>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 3.7063870239257812
+Training time: 0.5115230083465576
+INFO:nwp_trainer:Loss after 3000 sentences: 3.1513629150390625
+Training time: 1.592437505722046
+INFO:nwp_trainer:Loss after 10000 sentences: 2.737979736328125
+Training time: 5.142149209976196
+INFO:nwp_trainer:Loss after 30000 sentences: 2.48363720703125
+Training time: 15.119759321212769
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 1.766s
+training loss:		4.596252
+validation loss:		4.589330
+Epoch 1 of 8 took 16.892s
+training loss:		2.108889
+validation loss:		2.081487
+Epoch 2 of 8 took 16.993s
+training loss:		2.074213
+validation loss:		2.048317
+Epoch 3 of 8 took 16.838s
+training loss:		2.057129
+validation loss:		2.032668
+Epoch 4 of 8 took 17.102s
+training loss:		2.044493
+validation loss:		2.021593
+Epoch 5 of 8 took 16.898s
+training loss:		2.038394
+validation loss:		2.015895
+Epoch 6 of 8 took 16.864s
+training loss:		2.031376
+validation loss:		2.009417
+Epoch 7 of 8 took 16.907s
+training loss:		2.027636
+validation loss:		2.005646
+Epoch 8 of 8 took 16.815s
+training loss:		2.026617
+validation loss:		2.004424
+
+real	8m4.533s
+user	7m58.571s
+sys	0m3.769s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_40/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_40/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_40/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 40
+INFO:root:lr: 0.0002
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.0002
+    lr: 0.0002
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b121778db50>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 4.082018432617187
+Training time: 0.2883632183074951
+INFO:nwp_trainer:Loss after 3000 sentences: 3.4758894856770834
+Training time: 0.8978948593139648
+INFO:nwp_trainer:Loss after 10000 sentences: 2.95463037109375
+Training time: 2.899963855743408
+INFO:nwp_trainer:Loss after 30000 sentences: 2.63387255859375
+Training time: 8.380735635757446
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 1.000s
+training loss:		4.595860
+validation loss:		4.589036
+Epoch 1 of 8 took 9.983s
+training loss:		2.155121
+validation loss:		2.123256
+Epoch 2 of 8 took 9.696s
+training loss:		2.107972
+validation loss:		2.078442
+Epoch 3 of 8 took 9.650s
+training loss:		2.087959
+validation loss:		2.059443
+Epoch 4 of 8 took 9.577s
+training loss:		2.072111
+validation loss:		2.045091
+Epoch 5 of 8 took 9.573s
+training loss:		2.063231
+validation loss:		2.037549
+Epoch 6 of 8 took 9.640s
+training loss:		2.055941
+validation loss:		2.031230
+Epoch 7 of 8 took 9.594s
+training loss:		2.050920
+validation loss:		2.026392
+Epoch 8 of 8 took 9.622s
+training loss:		2.046834
+validation loss:		2.022356
+
+real	4m33.831s
+user	4m29.191s
+sys	0m2.989s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_80/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_80/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.0002_80/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 80
+INFO:root:lr: 0.0002
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.0002
+    lr: 0.0002
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b05befbfb50>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 0.557s
+training loss:		4.595891
+validation loss:		4.589057
+Epoch 1 of 8 took 5.245s
+training loss:		2.216894
+validation loss:		2.177742
+Epoch 2 of 8 took 5.233s
+training loss:		2.154623
+validation loss:		2.119166
+Epoch 3 of 8 took 5.286s
+training loss:		2.128325
+validation loss:		2.093850
+Epoch 4 of 8 took 5.310s
+training loss:		2.108718
+validation loss:		2.075438
+Epoch 5 of 8 took 5.225s
+training loss:		2.095923
+validation loss:		2.063677
+Epoch 6 of 8 took 5.239s
+training loss:		2.086632
+validation loss:		2.055088
+Epoch 7 of 8 took 5.235s
+training loss:		2.078972
+validation loss:		2.048254
+Epoch 8 of 8 took 5.242s
+training loss:		2.072585
+validation loss:		2.042279
+
+real	2m47.408s
+user	2m38.591s
+sys	0m8.060s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_5/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_5/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_5/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 5
+INFO:root:lr: 0.001
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.001
+    lr: 0.001
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b63fe1f71c0>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 2.6335153198242187
+Training time: 1.8632938861846924
+INFO:nwp_trainer:Loss after 3000 sentences: 2.4040966796875
+Training time: 5.676318645477295
+INFO:nwp_trainer:Loss after 10000 sentences: 2.24807568359375
+Training time: 18.992777347564697
+INFO:nwp_trainer:Loss after 30000 sentences: 2.1539134114583334
+Training time: 56.56621050834656
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 6.509s
+training loss:		4.598763
+validation loss:		4.592422
+Epoch 1 of 8 took 63.739s
+training loss:		2.013589
+validation loss:		1.997150
+Epoch 2 of 8 took 63.103s
+training loss:		1.977422
+validation loss:		1.960476
+Epoch 3 of 8 took 63.125s
+training loss:		1.964362
+validation loss:		1.946791
+Epoch 4 of 8 took 63.317s
+training loss:		1.955459
+validation loss:		1.939839
+Epoch 5 of 8 took 63.491s
+training loss:		1.950102
+validation loss:		1.934865
+Epoch 6 of 8 took 63.551s
+training loss:		1.945895
+validation loss:		1.931409
+Epoch 7 of 8 took 63.138s
+training loss:		1.945293
+validation loss:		1.930243
+Epoch 8 of 8 took 63.155s
+training loss:		1.945000
+validation loss:		1.930750
+
+real	30m18.399s
+user	30m3.643s
+sys	0m9.450s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_10/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_10/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_10/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 10
+INFO:root:lr: 0.001
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.001
+    lr: 0.001
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b0e97a0e1c0>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 2.8218505859375
+Training time: 0.9728639125823975
+INFO:nwp_trainer:Loss after 3000 sentences: 2.5156072998046874
+Training time: 2.9710540771484375
+INFO:nwp_trainer:Loss after 10000 sentences: 2.3154462890625
+Training time: 9.82852292060852
+INFO:nwp_trainer:Loss after 30000 sentences: 2.1983675130208336
+Training time: 29.209048986434937
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 3.414s
+training loss:		4.597057
+validation loss:		4.590302
+Epoch 1 of 8 took 32.614s
+training loss:		2.024526
+validation loss:		2.007671
+Epoch 2 of 8 took 32.609s
+training loss:		2.000356
+validation loss:		1.982576
+Epoch 3 of 8 took 33.035s
+training loss:		1.981499
+validation loss:		1.962573
+Epoch 4 of 8 took 32.622s
+training loss:		1.969698
+validation loss:		1.952650
+Epoch 5 of 8 took 32.561s
+training loss:		1.964578
+validation loss:		1.947753
+Epoch 6 of 8 took 32.845s
+training loss:		1.957802
+validation loss:		1.942318
+Epoch 7 of 8 took 32.597s
+training loss:		1.954029
+validation loss:		1.937725
+Epoch 8 of 8 took 32.820s
+training loss:		1.954538
+validation loss:		1.938914
+
+real	15m40.475s
+user	15m32.617s
+sys	0m5.511s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_20/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_20/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_20/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 20
+INFO:root:lr: 0.001
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.001
+    lr: 0.001
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2af2b822c160>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 3.119614562988281
+Training time: 0.5468106269836426
+INFO:nwp_trainer:Loss after 3000 sentences: 2.689998779296875
+Training time: 1.6619927883148193
+INFO:nwp_trainer:Loss after 10000 sentences: 2.417240966796875
+Training time: 5.462870359420776
+INFO:nwp_trainer:Loss after 30000 sentences: 2.26308984375
+Training time: 15.89742660522461
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 1.854s
+training loss:		4.596252
+validation loss:		4.589330
+Epoch 1 of 8 took 16.820s
+training loss:		2.044378
+validation loss:		2.021677
+Epoch 2 of 8 took 16.802s
+training loss:		2.022027
+validation loss:		2.000237
+Epoch 3 of 8 took 16.864s
+training loss:		2.006567
+validation loss:		1.984605
+Epoch 4 of 8 took 16.721s
+training loss:		1.993980
+validation loss:		1.973594
+Epoch 5 of 8 took 16.820s
+training loss:		1.985913
+validation loss:		1.964051
+Epoch 6 of 8 took 16.720s
+training loss:		1.976282
+validation loss:		1.954966
+Epoch 7 of 8 took 16.715s
+training loss:		1.969686
+validation loss:		1.948877
+Epoch 8 of 8 took 16.747s
+training loss:		1.969938
+validation loss:		1.949084
+
+real	8m3.364s
+user	7m57.839s
+sys	0m3.919s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_40/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_40/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_40/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 40
+INFO:root:lr: 0.001
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.001
+    lr: 0.001
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2ba1ddda0b20>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 3.504461364746094
+Training time: 0.26669740676879883
+INFO:nwp_trainer:Loss after 3000 sentences: 2.9290285237630207
+Training time: 0.8454980850219727
+INFO:nwp_trainer:Loss after 10000 sentences: 2.55773291015625
+Training time: 2.653787851333618
+INFO:nwp_trainer:Loss after 30000 sentences: 2.3518935546875
+Training time: 7.797452211380005
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 0.941s
+training loss:		4.595860
+validation loss:		4.589036
+Epoch 1 of 8 took 9.114s
+training loss:		2.065458
+validation loss:		2.040204
+Epoch 2 of 8 took 9.137s
+training loss:		2.040729
+validation loss:		2.016309
+Epoch 3 of 8 took 9.144s
+training loss:		2.026370
+validation loss:		2.003277
+Epoch 4 of 8 took 9.052s
+training loss:		2.016051
+validation loss:		1.993326
+Epoch 5 of 8 took 9.505s
+training loss:		2.009177
+validation loss:		1.986183
+Epoch 6 of 8 took 9.038s
+training loss:		2.001659
+validation loss:		1.979343
+Epoch 7 of 8 took 8.990s
+training loss:		1.996016
+validation loss:		1.973255
+Epoch 8 of 8 took 9.068s
+training loss:		1.994942
+validation loss:		1.972277
+
+real	4m16.417s
+user	4m12.725s
+sys	0m2.775s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_80/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_80/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.001_80/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 80
+INFO:root:lr: 0.001
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.001
+    lr: 0.001
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b02abcdbb80>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 0.553s
+training loss:		4.595891
+validation loss:		4.589057
+Epoch 1 of 8 took 5.387s
+training loss:		2.096976
+validation loss:		2.065185
+Epoch 2 of 8 took 5.435s
+training loss:		2.063145
+validation loss:		2.034247
+Epoch 3 of 8 took 5.520s
+training loss:		2.048827
+validation loss:		2.021037
+Epoch 4 of 8 took 5.636s
+training loss:		2.037483
+validation loss:		2.010773
+Epoch 5 of 8 took 5.557s
+training loss:		2.030966
+validation loss:		2.004322
+Epoch 6 of 8 took 5.541s
+training loss:		2.024582
+validation loss:		1.999189
+Epoch 7 of 8 took 5.405s
+training loss:		2.020198
+validation loss:		1.994498
+Epoch 8 of 8 took 5.388s
+training loss:		2.017204
+validation loss:		1.990818
+
+real	2m53.075s
+user	2m44.968s
+sys	0m7.497s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_5/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_5/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_5/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 5
+INFO:root:lr: 0.005
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.005
+    lr: 0.005
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2ac9ea070b50>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 2.449918518066406
+Training time: 1.92431640625
+INFO:nwp_trainer:Loss after 3000 sentences: 2.2939265950520835
+Training time: 5.745940208435059
+INFO:nwp_trainer:Loss after 10000 sentences: 2.183111328125
+Training time: 19.007402896881104
+INFO:nwp_trainer:Loss after 30000 sentences: 2.110710123697917
+Training time: 56.76248025894165
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 6.609s
+training loss:		4.598763
+validation loss:		4.592422
+Epoch 1 of 8 took 63.330s
+training loss:		1.992829
+validation loss:		1.978123
+Epoch 2 of 8 took 63.148s
+training loss:		1.951840
+validation loss:		1.937185
+Epoch 3 of 8 took 63.374s
+training loss:		1.938798
+validation loss:		1.925136
+Epoch 4 of 8 took 63.615s
+training loss:		1.924622
+validation loss:		1.914580
+Epoch 5 of 8 took 63.427s
+training loss:		1.921487
+validation loss:		1.911091
+Epoch 6 of 8 took 63.363s
+training loss:		1.913206
+validation loss:		1.904821
+Epoch 7 of 8 took 63.165s
+training loss:		1.912272
+validation loss:		1.903152
+Epoch 8 of 8 took 63.350s
+training loss:		1.911545
+validation loss:		1.903765
+
+real	30m31.185s
+user	30m17.034s
+sys	0m9.364s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_10/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_10/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_10/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 10
+INFO:root:lr: 0.005
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.005
+    lr: 0.005
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2ad031e161c0>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 2.537724609375
+Training time: 1.0664832592010498
+INFO:nwp_trainer:Loss after 3000 sentences: 2.334759521484375
+Training time: 3.2074270248413086
+INFO:nwp_trainer:Loss after 10000 sentences: 2.20239453125
+Training time: 10.529280185699463
+INFO:nwp_trainer:Loss after 30000 sentences: 2.1236720377604166
+Training time: 31.02872633934021
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 3.711s
+training loss:		4.597057
+validation loss:		4.590302
+Epoch 1 of 8 took 34.566s
+training loss:		1.997580
+validation loss:		1.983495
+Epoch 2 of 8 took 33.900s
+training loss:		1.964392
+validation loss:		1.950062
+Epoch 3 of 8 took 34.496s
+training loss:		1.946014
+validation loss:		1.929834
+Epoch 4 of 8 took 34.578s
+training loss:		1.930144
+validation loss:		1.916915
+Epoch 5 of 8 took 34.363s
+training loss:		1.924795
+validation loss:		1.912319
+Epoch 6 of 8 took 34.346s
+training loss:		1.916521
+validation loss:		1.905480
+Epoch 7 of 8 took 33.419s
+training loss:		1.911158
+validation loss:		1.899711
+Epoch 8 of 8 took 32.842s
+training loss:		1.910923
+validation loss:		1.901095
+
+real	16m26.994s
+user	16m17.174s
+sys	0m6.030s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_20/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_20/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_20/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 20
+INFO:root:lr: 0.005
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.005
+    lr: 0.005
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b14b62a51c0>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 2.723355712890625
+Training time: 0.5462086200714111
+INFO:nwp_trainer:Loss after 3000 sentences: 2.423786824544271
+Training time: 1.663968563079834
+INFO:nwp_trainer:Loss after 10000 sentences: 2.24749658203125
+Training time: 5.513680934906006
+INFO:nwp_trainer:Loss after 30000 sentences: 2.14983349609375
+Training time: 15.997485160827637
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 1.798s
+training loss:		4.596252
+validation loss:		4.589330
+Epoch 1 of 8 took 17.059s
+training loss:		2.003677
+validation loss:		1.984444
+Epoch 2 of 8 took 16.817s
+training loss:		1.977070
+validation loss:		1.957315
+Epoch 3 of 8 took 16.876s
+training loss:		1.956158
+validation loss:		1.935937
+Epoch 4 of 8 took 16.758s
+training loss:		1.944369
+validation loss:		1.926710
+Epoch 5 of 8 took 16.859s
+training loss:		1.935958
+validation loss:		1.918959
+Epoch 6 of 8 took 16.737s
+training loss:		1.923613
+validation loss:		1.908161
+Epoch 7 of 8 took 16.974s
+training loss:		1.913130
+validation loss:		1.898137
+Epoch 8 of 8 took 16.790s
+training loss:		1.913682
+validation loss:		1.899356
+
+real	8m7.980s
+user	8m1.897s
+sys	0m3.943s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_40/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_40/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_40/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 40
+INFO:root:lr: 0.005
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.005
+    lr: 0.005
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b68982921c0>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 3.0209390258789064
+Training time: 0.26453280448913574
+INFO:nwp_trainer:Loss after 3000 sentences: 2.5821868896484377
+Training time: 0.8250839710235596
+INFO:nwp_trainer:Loss after 10000 sentences: 2.329603271484375
+Training time: 2.620344638824463
+INFO:nwp_trainer:Loss after 30000 sentences: 2.1980611979166667
+Training time: 7.785714387893677
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 0.949s
+training loss:		4.595860
+validation loss:		4.589036
+Epoch 1 of 8 took 9.092s
+training loss:		2.019333
+validation loss:		1.995320
+Epoch 2 of 8 took 9.118s
+training loss:		1.996658
+validation loss:		1.974133
+Epoch 3 of 8 took 9.094s
+training loss:		1.979576
+validation loss:		1.957419
+Epoch 4 of 8 took 9.101s
+training loss:		1.964463
+validation loss:		1.944095
+Epoch 5 of 8 took 9.000s
+training loss:		1.953837
+validation loss:		1.931621
+Epoch 6 of 8 took 9.075s
+training loss:		1.943898
+validation loss:		1.923068
+Epoch 7 of 8 took 9.068s
+training loss:		1.937554
+validation loss:		1.916512
+Epoch 8 of 8 took 9.142s
+training loss:		1.936823
+validation loss:		1.916618
+
+real	4m17.277s
+user	4m13.114s
+sys	0m2.891s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_80/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_80/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.005_80/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 80
+INFO:root:lr: 0.005
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.005
+    lr: 0.005
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2ac4a0ff0190>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 0.566s
+training loss:		4.595891
+validation loss:		4.589057
+Epoch 1 of 8 took 5.538s
+training loss:		2.036699
+validation loss:		2.010848
+Epoch 2 of 8 took 5.518s
+training loss:		2.016612
+validation loss:		1.990268
+Epoch 3 of 8 took 5.531s
+training loss:		2.000495
+validation loss:		1.975664
+Epoch 4 of 8 took 5.545s
+training loss:		1.988166
+validation loss:		1.963748
+Epoch 5 of 8 took 5.716s
+training loss:		1.978797
+validation loss:		1.954560
+Epoch 6 of 8 took 5.353s
+training loss:		1.970059
+validation loss:		1.947258
+Epoch 7 of 8 took 5.789s
+training loss:		1.963001
+validation loss:		1.939435
+Epoch 8 of 8 took 5.795s
+training loss:		1.959683
+validation loss:		1.936061
+
+real	2m54.987s
+user	2m46.278s
+sys	0m7.682s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_5/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_5/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_5/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 5
+INFO:root:lr: 0.025
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.025
+    lr: 0.025
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b4581fedb50>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 2.5379913330078123
+Training time: 1.9802911281585693
+INFO:nwp_trainer:Loss after 3000 sentences: 2.310685831705729
+Training time: 5.90587306022644
+INFO:nwp_trainer:Loss after 10000 sentences: 2.17282421875
+Training time: 19.399493932724
+INFO:nwp_trainer:Loss after 30000 sentences: 2.1082171223958333
+Training time: 57.50108194351196
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 6.700s
+training loss:		4.598763
+validation loss:		4.592422
+Epoch 1 of 8 took 64.429s
+training loss:		2.058175
+validation loss:		2.041144
+Epoch 2 of 8 took 63.958s
+training loss:		2.016317
+validation loss:		1.998782
+Epoch 3 of 8 took 64.459s
+training loss:		2.037021
+validation loss:		2.018140
+Epoch 4 of 8 took 64.428s
+training loss:		1.997071
+validation loss:		1.981814
+Epoch 5 of 8 took 64.168s
+training loss:		1.994700
+validation loss:		1.979011
+Epoch 6 of 8 took 64.143s
+training loss:		1.984182
+validation loss:		1.971001
+Epoch 7 of 8 took 63.552s
+training loss:		1.984760
+validation loss:		1.970394
+Epoch 8 of 8 took 63.295s
+training loss:		1.984024
+validation loss:		1.971383
+
+real	30m41.997s
+user	30m26.801s
+sys	0m9.374s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_10/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_10/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_10/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 10
+INFO:root:lr: 0.025
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.025
+    lr: 0.025
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b045c6cbb80>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 2.527144317626953
+Training time: 0.9629497528076172
+INFO:nwp_trainer:Loss after 3000 sentences: 2.3293426513671873
+Training time: 2.8989598751068115
+INFO:nwp_trainer:Loss after 10000 sentences: 2.1871640625
+Training time: 9.64248538017273
+INFO:nwp_trainer:Loss after 30000 sentences: 2.10660107421875
+Training time: 28.894105434417725
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 3.424s
+training loss:		4.597057
+validation loss:		4.590302
+Epoch 1 of 8 took 32.734s
+training loss:		2.001067
+validation loss:		1.985148
+Epoch 2 of 8 took 32.529s
+training loss:		1.981691
+validation loss:		1.964658
+Epoch 3 of 8 took 32.334s
+training loss:		1.976028
+validation loss:		1.957524
+Epoch 4 of 8 took 32.225s
+training loss:		1.955045
+validation loss:		1.939884
+Epoch 5 of 8 took 32.260s
+training loss:		1.947904
+validation loss:		1.934442
+Epoch 6 of 8 took 32.412s
+training loss:		1.938805
+validation loss:		1.927216
+Epoch 7 of 8 took 32.356s
+training loss:		1.924789
+validation loss:		1.913309
+Epoch 8 of 8 took 32.257s
+training loss:		1.922598
+validation loss:		1.912760
+
+real	15m27.890s
+user	15m18.713s
+sys	0m5.713s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_20/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_20/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_20/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 20
+INFO:root:lr: 0.025
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.025
+    lr: 0.025
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b5e29162b50>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 2.5647012329101564
+Training time: 0.501854658126831
+INFO:nwp_trainer:Loss after 3000 sentences: 2.3355940755208335
+Training time: 1.5368683338165283
+INFO:nwp_trainer:Loss after 10000 sentences: 2.195574951171875
+Training time: 5.028708457946777
+INFO:nwp_trainer:Loss after 30000 sentences: 2.11315087890625
+Training time: 14.90135645866394
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 1.750s
+training loss:		4.596252
+validation loss:		4.589330
+Epoch 1 of 8 took 16.871s
+training loss:		1.987918
+validation loss:		1.967347
+Epoch 2 of 8 took 17.023s
+training loss:		1.960717
+validation loss:		1.942525
+Epoch 3 of 8 took 17.003s
+training loss:		1.946708
+validation loss:		1.926829
+Epoch 4 of 8 took 17.131s
+training loss:		1.935166
+validation loss:		1.919190
+Epoch 5 of 8 took 17.025s
+training loss:		1.929955
+validation loss:		1.914057
+Epoch 6 of 8 took 16.769s
+training loss:		1.918893
+validation loss:		1.906303
+Epoch 7 of 8 took 16.809s
+training loss:		1.904806
+validation loss:		1.892529
+Epoch 8 of 8 took 16.809s
+training loss:		1.902794
+validation loss:		1.892251
+
+real	8m3.701s
+user	7m58.109s
+sys	0m3.623s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_40/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_40/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_40/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 40
+INFO:root:lr: 0.025
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.025
+    lr: 0.025
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b984ade9190>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 2.760704345703125
+Training time: 0.27509474754333496
+INFO:nwp_trainer:Loss after 3000 sentences: 2.414512125651042
+Training time: 0.8450381755828857
+INFO:nwp_trainer:Loss after 10000 sentences: 2.227472412109375
+Training time: 2.7177722454071045
+INFO:nwp_trainer:Loss after 30000 sentences: 2.131715169270833
+Training time: 8.01891541481018
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 0.967s
+training loss:		4.595860
+validation loss:		4.589036
+Epoch 1 of 8 took 9.128s
+training loss:		1.993307
+validation loss:		1.969743
+Epoch 2 of 8 took 9.339s
+training loss:		1.964162
+validation loss:		1.943921
+Epoch 3 of 8 took 9.158s
+training loss:		1.948473
+validation loss:		1.930207
+Epoch 4 of 8 took 9.210s
+training loss:		1.935181
+validation loss:		1.919643
+Epoch 5 of 8 took 9.130s
+training loss:		1.926286
+validation loss:		1.908910
+Epoch 6 of 8 took 9.223s
+training loss:		1.916107
+validation loss:		1.901597
+Epoch 7 of 8 took 9.209s
+training loss:		1.912518
+validation loss:		1.897427
+Epoch 8 of 8 took 9.314s
+training loss:		1.909247
+validation loss:		1.896275
+
+real	4m21.397s
+user	4m16.682s
+sys	0m3.002s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_80/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_80/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.025_80/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 80
+INFO:root:lr: 0.025
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.025
+    lr: 0.025
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b1e8c271b80>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 0.560s
+training loss:		4.595891
+validation loss:		4.589057
+Epoch 1 of 8 took 5.283s
+training loss:		2.011752
+validation loss:		1.984858
+Epoch 2 of 8 took 5.292s
+training loss:		1.976224
+validation loss:		1.953387
+Epoch 3 of 8 took 5.369s
+training loss:		1.955987
+validation loss:		1.935368
+Epoch 4 of 8 took 5.294s
+training loss:		1.940766
+validation loss:		1.921497
+Epoch 5 of 8 took 5.262s
+training loss:		1.932408
+validation loss:		1.912613
+Epoch 6 of 8 took 5.291s
+training loss:		1.923013
+validation loss:		1.904278
+Epoch 7 of 8 took 5.212s
+training loss:		1.917078
+validation loss:		1.899401
+Epoch 8 of 8 took 5.297s
+training loss:		1.914390
+validation loss:		1.897037
+
+real	2m48.613s
+user	2m39.588s
+sys	0m8.128s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_5/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_5/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_5/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 5
+INFO:root:lr: 0.125
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.125
+    lr: 0.125
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2ab110be1b50>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 7.803682250976562
+Training time: 1.9262230396270752
+INFO:nwp_trainer:Loss after 3000 sentences: 4.577872314453125
+Training time: 5.759051084518433
+INFO:nwp_trainer:Loss after 10000 sentences: 3.411682373046875
+Training time: 19.2146897315979
+INFO:nwp_trainer:Loss after 30000 sentences: 3.0630423177083332
+Training time: 57.29736590385437
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 6.741s
+training loss:		4.598763
+validation loss:		4.592422
+Epoch 1 of 8 took 64.477s
+training loss:		2.885177
+validation loss:		2.860024
+Epoch 2 of 8 took 64.271s
+training loss:		2.878954
+validation loss:		2.852058
+Epoch 3 of 8 took 63.741s
+training loss:		2.719193
+validation loss:		2.690772
+Epoch 4 of 8 took 63.397s
+training loss:		2.758625
+validation loss:		2.732041
+Epoch 5 of 8 took 63.269s
+training loss:		2.752989
+validation loss:		2.728909
+Epoch 6 of 8 took 63.138s
+training loss:		2.695303
+validation loss:		2.672109
+Epoch 7 of 8 took 63.007s
+training loss:		2.738846
+validation loss:		2.715438
+Epoch 8 of 8 took 63.539s
+training loss:		2.706141
+validation loss:		2.683122
+
+real	30m34.342s
+user	30m19.606s
+sys	0m9.314s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_10/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_10/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_10/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 10
+INFO:root:lr: 0.125
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.125
+    lr: 0.125
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b6b755cb160>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 11.222135009765625
+Training time: 1.058929204940796
+INFO:nwp_trainer:Loss after 3000 sentences: 5.711468912760417
+Training time: 3.162182331085205
+INFO:nwp_trainer:Loss after 10000 sentences: 3.753500732421875
+Training time: 10.432956457138062
+INFO:nwp_trainer:Loss after 30000 sentences: 3.17952734375
+Training time: 30.653581619262695
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 3.460s
+training loss:		4.597057
+validation loss:		4.590302
+Epoch 1 of 8 took 34.161s
+training loss:		2.881759
+validation loss:		2.853651
+Epoch 2 of 8 took 33.894s
+training loss:		2.879512
+validation loss:		2.852877
+Epoch 3 of 8 took 34.127s
+training loss:		2.878770
+validation loss:		2.848078
+Epoch 4 of 8 took 34.219s
+training loss:		2.877625
+validation loss:		2.847997
+Epoch 5 of 8 took 34.216s
+training loss:		2.877356
+validation loss:		2.848175
+Epoch 6 of 8 took 34.593s
+training loss:		2.877655
+validation loss:		2.849081
+Epoch 7 of 8 took 33.731s
+training loss:		2.877217
+validation loss:		2.847558
+Epoch 8 of 8 took 34.105s
+training loss:		2.877315
+validation loss:		2.848426
+
+real	16m26.891s
+user	16m17.870s
+sys	0m5.363s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_20/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_20/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_20/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 20
+INFO:root:lr: 0.125
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.125
+    lr: 0.125
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b9da98851c0>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 17.34777099609375
+Training time: 0.5375173091888428
+INFO:nwp_trainer:Loss after 3000 sentences: 12.07426025390625
+Training time: 1.6391239166259766
+INFO:nwp_trainer:Loss after 10000 sentences: 5.67950341796875
+Training time: 5.393260717391968
+INFO:nwp_trainer:Loss after 30000 sentences: 3.8360367838541665
+Training time: 15.859285116195679
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 1.817s
+training loss:		4.596252
+validation loss:		4.589330
+Epoch 1 of 8 took 17.732s
+training loss:		2.881437
+validation loss:		2.851678
+Epoch 2 of 8 took 17.627s
+training loss:		2.888682
+validation loss:		2.861959
+Epoch 3 of 8 took 17.583s
+training loss:		2.883063
+validation loss:		2.854604
+Epoch 4 of 8 took 17.642s
+training loss:		2.878702
+validation loss:		2.850239
+Epoch 5 of 8 took 17.553s
+training loss:		2.880653
+validation loss:		2.850206
+Epoch 6 of 8 took 17.523s
+training loss:		2.877874
+validation loss:		2.849109
+Epoch 7 of 8 took 17.570s
+training loss:		2.876998
+validation loss:		2.848104
+Epoch 8 of 8 took 17.482s
+training loss:		2.877090
+validation loss:		2.848328
+
+real	8m30.293s
+user	8m23.889s
+sys	0m3.899s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_40/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_40/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_40/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 40
+INFO:root:lr: 0.125
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.125
+    lr: 0.125
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2b2143774190>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:Loss after 1000 sentences: 15.1954296875
+Training time: 0.28163957595825195
+INFO:nwp_trainer:Loss after 3000 sentences: 12.996673990885416
+Training time: 0.875166654586792
+INFO:nwp_trainer:Loss after 10000 sentences: 6.2298154296875
+Training time: 2.725519895553589
+INFO:nwp_trainer:Loss after 30000 sentences: 4.008287760416667
+Training time: 8.048969268798828
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 0.957s
+training loss:		4.595860
+validation loss:		4.589036
+Epoch 1 of 8 took 9.070s
+training loss:		2.880195
+validation loss:		2.850914
+Epoch 2 of 8 took 9.144s
+training loss:		2.882639
+validation loss:		2.854318
+Epoch 3 of 8 took 9.195s
+training loss:		2.880700
+validation loss:		2.851505
+Epoch 4 of 8 took 9.397s
+training loss:		2.882328
+validation loss:		2.852481
+Epoch 5 of 8 took 8.934s
+training loss:		2.877953
+validation loss:		2.848599
+Epoch 6 of 8 took 8.954s
+training loss:		2.877990
+validation loss:		2.849806
+Epoch 7 of 8 took 8.932s
+training loss:		2.877932
+validation loss:		2.850433
+Epoch 8 of 8 took 9.000s
+training loss:		2.880728
+validation loss:		2.853676
+
+real	4m15.492s
+user	4m11.592s
+sys	0m2.738s
+mkdir: cannot create directory ‘IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_80/’: File exists
+IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_80/
+INFO:root:data_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/
+INFO:root:results_loc: IncrementalReadingLanguageModelling/src/language_models/transformer/parameters_pos_0.125_80/
+INFO:root:dict_loc: IncrementalReadingLanguageModelling/data/wiki/sequences/pos/transformer/wiki_train_pos_indices
+INFO:root:batch_size: 80
+INFO:root:lr: 0.125
+INFO:root:n_epochs: 8
+INFO:root:model_ids: [1]
+INFO:root:cuda: True
+INFO:root:save_states: [1000, 3000, 10000, 30000, 100000, 300000, 1000000, 3000000, 5855670]
+INFO:root:gradient_clipping: False
+INFO:root:seed: 745546129
+INFO:root:param: xavier
+INFO:root:bias: none
+INFO:root:Use CUDA: True
+INFO:encoders:Using the standard transformer encoder but with decoder (future) masking
+INFO:encoders:Embedding layer: {'n_embeddings': 46, 'embedding_dim': 400, 'sparse': False, 'padding_idx': 0}
+Transformer layer: {'in_size': 400, 'fc_size': 1024, 'n_layers': 2, 'h': 8, 'max_len': 54}
+INFO:nwp_trainer:SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.125
+    lr: 0.125
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0
+)
+INFO:nwp_trainer:<torch.optim.lr_scheduler.MultiStepLR object at 0x2ae51d4ecb50>
+INFO:root:Training model nr 1
+INFO:root:Model parameters: 2961294
+INFO:nwp_trainer:training epoch: 1
+INFO:nwp_trainer:training epoch: 2
+INFO:nwp_trainer:training epoch: 3
+INFO:nwp_trainer:training epoch: 4
+INFO:nwp_trainer:training epoch: 5
+INFO:nwp_trainer:training epoch: 6
+INFO:nwp_trainer:training epoch: 7
+INFO:nwp_trainer:training epoch: 8
+Epoch 1 of 8 took 0.558s
+training loss:		4.595891
+validation loss:		4.589057
+Epoch 1 of 8 took 5.292s
+training loss:		2.881409
+validation loss:		2.851873
+Epoch 2 of 8 took 5.366s
+training loss:		2.881491
+validation loss:		2.848913
+Epoch 3 of 8 took 5.310s
+training loss:		2.879844
+validation loss:		2.849021
+Epoch 4 of 8 took 5.312s
+training loss:		2.884370
+validation loss:		2.852283
+Epoch 5 of 8 took 5.349s
+training loss:		2.879258
+validation loss:		2.847686
+Epoch 6 of 8 took 5.307s
+training loss:		2.879869
+validation loss:		2.849964
+Epoch 7 of 8 took 5.337s
+training loss:		2.877904
+validation loss:		2.846325
+Epoch 8 of 8 took 5.393s
+training loss:		2.880634
+validation loss:		2.848532
+
+real	2m48.392s
+user	2m39.664s
+sys	0m7.914s
