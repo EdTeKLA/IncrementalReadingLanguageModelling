@@ -6,3 +6,4 @@ The tables in this folder contain the statistical information for the terms of t
 * [N-gram Word Full Model](n_gram_word_full_model.md)
 * [N-gram POS Full Model](n_gram_pos_full_model.md)
 * [N-gram Word/POS Full Model](n_gram_word_pos_full_model.md)
+* [PCFG Full Model](PCFG_full_model.md)
