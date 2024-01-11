@@ -8,3 +8,4 @@ The tables in this folder contain the statistical information for the terms of t
 * [N-gram Word/POS Full Model](n_gram_word_pos_full_model.md)
 * [PCFG Total Full Model](PCFG_total_full_model.md)
 * [PCFG Lexical Full Model](PCFG_lexical_full_model.md)
+* [PCFG Syntactic Full Model](PCFG_syntactic_full_model.md)
