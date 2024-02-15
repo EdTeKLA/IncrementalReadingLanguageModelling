@@ -12,6 +12,6 @@ The code in [rnng-pytorch](rnng-pytorch) is based on the work of Noji & Oseki (2
 I made minor changes to the code, such as:
 * Increasing the reporting of training and validation loss
 
-The following files are completely my own work: 
+The following files are my own work: 
 * [format_surprisal_output.py](format_surprisal_output.py)
 * [format_output.py](format_output.py)

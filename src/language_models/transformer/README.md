@@ -13,7 +13,7 @@ I made minor changes to the code, such as:
 * Increasing the reporting of training and validation loss
 * Enclosing code in a for loop for hyperparameter tuning
 
-The following files are completely my own work: 
+The following files are my own work: 
 * [format_surprisal_output.py](format_surprisal_output.py)
 * [hyperparameter_selection.py](hyperparameter_selection.py)
 * [calculate_test_perplexity.py](caclulate_test_perplexity.py)
