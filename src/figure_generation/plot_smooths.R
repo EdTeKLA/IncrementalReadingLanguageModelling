@@ -2,7 +2,7 @@ library(mgcv)
 library(ggplot2)
 library(gratia)
 
-data_path <- "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/all_data_cleaned.csv"
+data_path <- "../../../GAMMs/all_data_cleaned.csv"
 data <- read.csv(data_path)
 
 head(data)
@@ -20,7 +20,7 @@ data$SentPos = factor(data$SentPos)
 
 
 get_model <- function(language, model_num, type) {
-  filename <- paste("/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/models/", type, "/", language, "/", language, "_GAMM_", model_num, ".rds", sep = "")
+  filename <- paste("../../../GAMMs/models/", type, "/", language, "/", language, "_GAMM_", model_num, ".rds", sep = "")
   readRDS(filename)
 }
 
@@ -103,7 +103,7 @@ if (type == "winsorized") {
 }
 
 
-save_path = paste("/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/figures/smooth_" ,type,"_base_model_", base_model_num, "_plots", sep="")
+save_path = paste("../../../GAMMs/figures/smooth_" ,type,"_base_model_", base_model_num, "_plots", sep="")
 
 
 for (language in list("E", "C", "K", "S")) {

@@ -1,7 +1,7 @@
 library(ggplot2)
 library(patchwork)
 
-data_path <- "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/term_significance/significance_heatmap.csv"
+data_path <- "../../../GAMMs/term_significance/significance_heatmap.csv"
 data <- read.csv(data_path)
 
 data$term <- factor(data$term, levels = rev(c("s(Participant)",
@@ -37,7 +37,7 @@ geom_col = "black"
 geom_size = 0.1
 #3289a8
 # 5bb097
-save_path <- "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/term_significance/"
+save_path <- "../../../GAMMs/term_significance/"
 
 
 # ggplot(subset(data, language == "English"), aes(x = language_model , y = term, fill = significance)) +

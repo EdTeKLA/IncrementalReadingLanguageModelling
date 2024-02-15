@@ -13,10 +13,10 @@ height = 5
 width = 6
 
 
-data <- read.csv(paste("/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/model_performance_metrics/logLik_",type,"_base_model_", base_model_num, ".csv", sep=""))
+data <- read.csv(paste("../../../GAMMs/model_performance_metrics/logLik_",type,"_base_model_", base_model_num, ".csv", sep=""))
 
 data
-save_path = paste("/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/figures/logLik_" ,type,"_base_model_", base_model_num, "_plots/", sep="")
+save_path = paste("../../../GAMMs/figures/logLik_" ,type,"_base_model_", base_model_num, "_plots/", sep="")
 
 if (base_model_num == 1) {
   y_min = -5

@@ -2,7 +2,7 @@
 
 # This requires Stanford's tsurgeon package
 # you can get it here: http://nlp.stanford.edu/software/tregex.shtml
-TSURGEONPATH=/Users/shannon/Documents/incremental-reading-language-modelling/src/PCFG/incremental-top-down-parser/stanford-tregex-4.0.0
+TSURGEONPATH="enter path to tsurgeon"
 export CLASSPATH=$TSURGEONPATH/stanford-tregex.jar:$CLASSPATH
 
 # removes empty nodes, normalizes root category to TOP and ensures unary TOP 

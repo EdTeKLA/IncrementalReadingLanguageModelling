@@ -1,7 +1,7 @@
 library(mgcv)
 
 # load data
-data_path <- "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/all_data_cleaned.csv"
+data_path <- "../../../output/GAMMs/all_data_cleaned.csv"
 data <- read.csv(data_path)
 head(data)
 nrow(data)
@@ -16,12 +16,12 @@ data$Trial = factor(data$Trial)
 data$HasPunct = factor(data$HasPunct)
 
 get_model <- function(language, model_num, type) {
-  filename <- paste("/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/models/", type, "/", language, "/", language, "_GAMM_", model_num, ".rds", sep = "")
+  filename <- paste("../../../output/GAMMs/models/", type, "/", language, "/", language, "_GAMM_", model_num, ".rds", sep = "")
   readRDS(filename)
 }
 
 language = "K"
-save_path <- paste("/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/models/original/", language, "/", sep="")
+save_path <- paste("../../../output/GAMMs/models/original/", language, "/", sep="")
 GAMM_61 <- get_model(language, 61, "original")
 
 GAMM_62 <- update(GAMM_61, . ~ . + s(n_gram_word_surp) +

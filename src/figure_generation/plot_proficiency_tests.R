@@ -17,7 +17,7 @@ find_outliers <- function(y, coef = 1.5) {
   return(y[outliers])
 }
 
-data_path <- "/Users/shannon/Documents/IncrementalReadingLanguageModelling/data/reading_time/proficiency.csv"
+data_path <- "../../../data/reading_time/proficiency.csv"
 data <- read.csv(data_path)
 head(data)
 nrow(data)
@@ -58,7 +58,7 @@ wilcox.test(english, chinese)
 
 
 
-data_path <- "/Users/shannon/Documents/IncrementalReadingLanguageModelling/data/reading_time/LOR.csv"
+data_path <- "../../../data/reading_time/LOR.csv"
 data <- read.csv(data_path)
 head(data)
 nrow(data)
@@ -107,7 +107,7 @@ ggplot(data, aes(x = Language, y = LOR)) +
         axis.line = element_line(colour = "black"))
 
 
-ggsave(filename ="LOR_boxplot.svg", path = "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/stats/boxplots/", width=4, height=4)
+ggsave(filename ="LOR_boxplot.svg", path = "../../../stats/boxplots/", width=4, height=4)
 
 ggplot(data, aes(x = Language, y = LOR)) +
   geom_boxplot(show.legend = FALSE) +
@@ -115,7 +115,7 @@ ggplot(data, aes(x = Language, y = LOR)) +
   scale_y_continuous(breaks=seq(0,264,by=48), labels=function(x)x/12, limits = c(0,264))
 
 
-ggsave(filename ="LOR_boxplot.svg", path = "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/stats/boxplots/", width=4, height=4)
+ggsave(filename ="LOR_boxplot.svg", path = "../../../stats/boxplots/", width=4, height=4)
 
 
 
@@ -134,7 +134,7 @@ ggplot(data, aes(x = Language, y = LOR))+
         panel.border = element_rect(colour = "black", fill=NA, size=0.7))
 
 
-ggsave(filename ="LOR_boxplot.svg", path = "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/stats/boxplots/", width=4, height=4)
+ggsave(filename ="LOR_boxplot.svg", path = "../../../stats/boxplots/", width=4, height=4)
 
 
 
@@ -147,7 +147,7 @@ pairwise.wilcox.test(data$LOR, data$Language,
 
 
 
-data_path <- "/Users/shannon/Documents/IncrementalReadingLanguageModelling/data/reading_time/proficiencies.csv"
+data_path <- "../../../data/reading_time/proficiencies.csv"
 data <- read.csv(data_path)
 head(data)
 nrow(data)
@@ -289,7 +289,7 @@ wilcoxonZ(korean_data$Vocab, spanish_data$Vocab, exact=F)/sqrt((nrow(korean_data
 #   scale_x_discrete(limits=c("English","Chinese","Korean", "Spanish")) +
 #   scale_fill_manual(values=c("#d0d0d0", "#7d7d7d"))
 # 
-# ggsave(filename ="comp_boxplot.svg", path = "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/stats/boxplots/", width=4, height=4)
+# ggsave(filename ="comp_boxplot.svg", path = "../../../stats/boxplots/", width=4, height=4)
 # 
 # 
 # ggplot(data, aes(x = Language, y = Vocab/100, fill = factor(Measure, levels = c("Performance", "Competence"))))+ 
@@ -308,13 +308,13 @@ wilcoxonZ(korean_data$Vocab, spanish_data$Vocab, exact=F)/sqrt((nrow(korean_data
 #   scale_fill_manual(values=c("#d0d0d0", "#7d7d7d"))
 # 
 # 
-# ggsave(filename ="vocab_boxplot.svg", path = "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/stats/boxplots/", width=4, height=4)
+# ggsave(filename ="vocab_boxplot.svg", path = "../../../stats/boxplots/", width=4, height=4)
 # 
 
 
 
 
-data_path <- "/Users/shannon/Documents/IncrementalReadingLanguageModelling/data/reading_time/proficiencies.csv"
+data_path <- "../../../data/reading_time/proficiencies.csv"
 data <- read.csv(data_path)
 head(data)
 nrow(data)
@@ -338,7 +338,7 @@ plot1 <- ggplot(data, aes(x = Language, y = Comp/100, fill = factor(Measure, lev
   scale_fill_manual(labels=c("Performance", "Adjusted Performance"), values=c("#FFFFFF", "#D1D1D1"))
 plot1
 
-ggsave(filename ="comp_boxplot.svg", path = "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/stats/boxplots/", width=4, height=4)
+ggsave(filename ="comp_boxplot.svg", path = "../../../stats/boxplots/", width=4, height=4)
 
 
 plot2 <- ggplot(data, aes(x = Language, y = Vocab/100, fill = factor(Measure, levels = c("Performance", "Competence"))))+ 
@@ -355,12 +355,12 @@ plot2 <- ggplot(data, aes(x = Language, y = Vocab/100, fill = factor(Measure, le
   scale_fill_manual(labels=c("Performance", "Adjusted Performance"), values=c("#FFFFFF", "#D1D1D1"))
 
 
-ggsave(filename ="vocab_boxplot.svg", path = "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/stats/boxplots/", width=4, height=4)
+ggsave(filename ="vocab_boxplot.svg", path = "../../../stats/boxplots/", width=4, height=4)
 
 
 combined_plot <- plot1 / plot2 + plot_layout(ncol = 1)
 
 combined_plot
 
-ggsave(filename ="proficiency.svg", path = "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/stats/boxplots/", width=5, height=8.25)
+ggsave(filename ="proficiency.svg", path = "../../../stats/boxplots/", width=5, height=8.25)
 

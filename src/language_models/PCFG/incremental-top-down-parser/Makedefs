@@ -1,4 +1,4 @@
-INSTDIR=/Users/shannon/Documents/incremental-reading-language-modelling/src/PCFG/incremental-top-down-parser
+INSTDIR='path to incremental top down parser'
 CC= gcc
 CFLAGS= -g $(INCLUDEDIRS)
 PARLIB= $(INSTDIR)/lib/libparse.a

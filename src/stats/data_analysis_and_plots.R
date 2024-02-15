@@ -12,8 +12,8 @@ library(tidyverse)
 library(DescTools)
 
 
-data_path <- "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/RT/all_data_cleaned.csv"
-img_path = "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/RT/images/"
+data_path <- "../../output/RT/all_data_cleaned.csv"
+img_path = "../../output/RT/images/"
 data <- read.csv(data_path)
 
 # check the modality of each group of speakers based on first language

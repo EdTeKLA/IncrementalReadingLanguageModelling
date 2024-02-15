@@ -2,7 +2,7 @@ library(mgcv)
 library(gratia)
 
 get_model <- function(language, model_num, type) {
-  filename <- paste("/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/models/", type, "/", language, "/", language, "_GAMM_", model_num, ".rds", sep = "")
+  filename <- paste("../../../output/GAMMs/models/", type, "/", language, "/", language, "_GAMM_", model_num, ".rds", sep = "")
   readRDS(filename)
 }
 
@@ -29,7 +29,7 @@ coef(GAMM)
 
 width = 6
 height = 6
-save_path = "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/gam_check_plots"
+save_path = "../../../output/GAMMs/gam_check_plots"
 
 E = get_model("E", 61, "original")
 appraise(E)
@@ -56,27 +56,27 @@ ggsave(filename ="S.png", path = save_path, width=width, height=height, device="
 
 
 
-qq_file = paste("/Users/shannon/Documents/incremental-reading-language-modelling/output/RT/gam_check_plots/",language, "/", model, "/qq_", language, "_GAMM_", model, ".png", sep = "")
+qq_file = paste("../../../output/RT/gam_check_plots/",language, "/", model, "/qq_", language, "_GAMM_", model, ".png", sep = "")
 png(qq_file, width = 4, height = 4, units = "in", res = 300)
 par(mar = c(4.5, 4.5, 1, 1))
 qq.gam(b, rep = 0, level = 0.9, type = type, rl.col = 2,
        rep.col = "gray80")
 dev.off()
 
-hist_file = paste("/Users/shannon/Documents/incremental-reading-language-modelling/output/RT/gam_check_plots/",language, "/", model, "/hist_", language, "_GAMM_", model, ".png", sep = "")
+hist_file = paste("../../../output/RT/gam_check_plots/",language, "/", model, "/hist_", language, "_GAMM_", model, ".png", sep = "")
 png(hist_file, width = 4, height = 4, units = "in", res = 300)
 par(mar = c(4.5, 4.5, 1.5, 1.5))
 hist(resid, xlab = "Residuals", main = "Histogram of residuals")
 dev.off()
 
-resids_file = paste("/Users/shannon/Documents/incremental-reading-language-modelling/output/RT/gam_check_plots/",language, "/", model, "/resids_", language, "_GAMM_", model, ".png", sep = "")
+resids_file = paste("../../../output/RT/gam_check_plots/",language, "/", model, "/resids_", language, "_GAMM_", model, ".png", sep = "")
 png(resids_file, width = 4, height = 4, units = "in", res = 300)
 par(mar = c(4.5, 4.5, 1.5, 1.5))
 plot(linpred, resid, main = "Resids vs. linear pred.",
      xlab = "linear predictor", ylab = "residuals")
 dev.off()
 
-response_file = paste("/Users/shannon/Documents/incremental-reading-language-modelling/output/RT/gam_check_plots/",language, "/", model, "/response_", language, "_GAMM_", model, ".png", sep = "")
+response_file = paste("../../../output/RT/gam_check_plots/",language, "/", model, "/response_", language, "_GAMM_", model, ".png", sep = "")
 png(response_file, width = 4, height = 4, units = "in", res = 300)
 par(mar = c(4.5, 4.5, 1.5, 1.5))
 plot(fitted(b), observed.y, xlab = "Fitted Values",

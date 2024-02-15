@@ -5,9 +5,9 @@ library(coin)
 library(rcompanion)
 library(rstatix)
 
-save_path = "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/stats/surprisal_violin_plots"
+save_path = "../../../stats/surprisal_violin_plots"
 
-data_path <- "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/all_data_cleaned.csv"
+data_path <- "../../../GAMMs/all_data_cleaned.csv"
 data <- read.csv(data_path)
 head(data)
 nrow(data)

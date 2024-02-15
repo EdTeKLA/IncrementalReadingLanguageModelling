@@ -3,7 +3,7 @@ library(mgcv)
 
 
 get_model <- function(language, model_num, type) {
-  filename <- paste("/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/models/", type, "/", language, "/", language, "_GAMM_", model_num, ".rds", sep = "")
+  filename <- paste("../../../output/GAMMs/models/", type, "/", language, "/", language, "_GAMM_", model_num, ".rds", sep = "")
   readRDS(filename)
 }
 
@@ -49,9 +49,9 @@ for (language in list("E", "C", "K", "S")) {
 colnames(df) <- c("language", "surprisal", "delta_AIC", "colour")
 colnames(df2) <- c("language", "surprisal", "delta_logLik", "colour")
 
-write.csv(df, paste("/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/model_performance_metrics/AIC_",type,"_base_model_", base_model_num, ".csv", sep=""), row.names=FALSE, quote=FALSE) 
+write.csv(df, paste("../../../output/GAMMs/model_performance_metrics/AIC_",type,"_base_model_", base_model_num, ".csv", sep=""), row.names=FALSE, quote=FALSE)
 
-write.csv(df2, paste("/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/model_performance_metrics/logLik_",type,"_base_model_", base_model_num, ".csv", sep=""), row.names=FALSE, quote=FALSE) 
+write.csv(df2, paste("../../../output/GAMMs/model_performance_metrics/logLik_",type,"_base_model_", base_model_num, ".csv", sep=""), row.names=FALSE, quote=FALSE)
 
 
 

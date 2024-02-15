@@ -2,7 +2,7 @@ library(ggplot2)
 library(ggbreak) 
 library(patchwork)
 
-data <- read.csv("/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/transformer/word/train_val_loss_transformer.csv")
+data <- read.csv("../../../transformer/word/train_val_loss_transformer.csv")
 # data <- subset(data, Epoch != 0)
 data
 ggplot(data) +
@@ -23,9 +23,9 @@ ggplot(data) +
         panel.background = element_rect(fill = "white"),
         axis.line = element_line(colour = "black"))
 
-ggsave(filename ="transformer_loss_vs_epochs.svg", path = "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/transformer/word", width=4, height=4)
+ggsave(filename ="transformer_loss_vs_epochs.svg", path = "../../../transformer/word", width=4, height=4)
 
-data <- read.csv("/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/RNNG/word/train_val_loss_rnng.csv")
+data <- read.csv("../../../RNNG/word/train_val_loss_rnng.csv")
 data
 t2.rect1 <- data.frame (xmin=1.08, xmax=18, ymin=250, ymax=Inf)
 # data <- subset(data, Epoch != 0)
@@ -49,5 +49,5 @@ ggplot(data) +
         panel.background = element_rect(fill = "white"),
         axis.line = element_line(colour = "black"))
 
-ggsave(filename ="RNNG_perplexity_vs_epochs.svg", path = "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/RNNG/word", width=4, height=4)
+ggsave(filename ="RNNG_perplexity_vs_epochs.svg", path = "../../../RNNG/word", width=4, height=4)
 

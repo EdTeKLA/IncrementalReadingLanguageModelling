@@ -1,5 +1,5 @@
 # load data
-data_path <- "/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/RT/all_data_cleaned.csv"
+data_path <- "../../output/RT/all_data_cleaned.csv"
 data <- read.csv(data_path)
 head(data)
 nrow(data)

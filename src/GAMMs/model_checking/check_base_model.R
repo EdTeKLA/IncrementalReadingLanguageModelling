@@ -1,7 +1,7 @@
 library(mgcv)
 
 get_model <- function(language, model_num, type) {
-  filename <- paste("/Users/shannon/Documents/IncrementalReadingLanguageModelling/output/GAMMs/models/", type, "/", language, "/", language, "_GAMM_", model_num, ".rds", sep = "")
+  filename <- paste("../../../output/GAMMs/models/", type, "/", language, "/", language, "_GAMM_", model_num, ".rds", sep = "")
   readRDS(filename)
 }
 
